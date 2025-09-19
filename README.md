@@ -1,14 +1,25 @@
-# Basic Next.js Template
+# Teatro Esporte Club Website
 
-This is a basic Next.js template to start new projects. It comes with ESLint, Prettier, and styled-components configured, and an example page.
+This is the official website for the Teatro Esporte Club, an improvisation school based in Aracaju, Brazil. The project is built with Next.js and showcases the school's classes, workshops, and shows.
 
-## Functionalities
+## About Teatro Esporte
 
-This is a simple boilerplate. The main functionalities are:
-- A Next.js setup with TypeScript.
-- Basic routing with the `pages` directory.
-- Linting with ESLint and code formatting with Prettier.
-- Styling with styled-components.
+Teatro Esporte is a school dedicated to teaching the art of improvisation. The main goal is to help students improve their communication skills, boost their creativity, and build confidence through improv classes and comedy shows.
+
+## Features
+
+- **Class Information:** View details about available classes for adults, such as "Academia Despertar Criativo" and "Teatro Esporte Club".
+- **Past Workshops:** See information about past workshops, like "Workshop Despertar Criativo" and "Workshop Palhaço Interior".
+- **Responsive Design:** The website is designed to work on different devices.
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Library:** [React](https://reactjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Styled Components](https://styled-components.com/)
+- **Linting:** [ESLint](https://eslint.org/)
+- **Formatting:** [Prettier](https://prettier.io/)
 
 ## Project Structure
 
@@ -16,12 +27,12 @@ The project structure follows the conventions defined in `GEMINI.md`:
 
 - `src/`: Contains all the source code.
   - `pages/`: Next.js pages.
-  - `components/`: Reusable components.
-  - `styles/`: Global styles and SCSS modules.
-  - `services/`: API services.
+  - `components/`: Reusable React components.
+  - `styles/`: Global styles and styled-components definitions.
+  - `services/`: API service integrations.
   - `utils/`: Utility functions.
   - `types/`: Global TypeScript types.
-- `public/`: Static files.
+- `public/`: Static files like images and fonts.
 - `GEMINI.md`: AI rules for this project.
 
 ## How to run locally
@@ -38,9 +49,9 @@ The project structure follows the conventions defined in `GEMINI.md`:
 
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## How to interact with it
+## How to contribute
 
 - The main page is `src/pages/index.tsx`. You can start by editing this file.
 - Create new pages by adding files to the `src/pages` directory.
 - Create reusable components in the `src/components` directory.
-- Use the `npm run lint` command to check for linting errors.
+- Use the `npm run lint` command to check for linting errors before committing.

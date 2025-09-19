@@ -69,6 +69,12 @@ export default function Turmas() {
 					name="description"
 					content="Conheça nossas turmas de teatro de improvisação para adultos e crianças em Aracaju. Encontre a aula perfeita para desenvolver sua criatividade e comunicação."
 				/>
+				<meta
+					property="og:image"
+					content="https://github.com/AntonioHamilton/teatro-esporte/blob/master/public/images/teatro-esporte-logo.png"
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://seudominio.com" />
 			</Head>
 			<Menu variant={"dark"} />
 			<SC.SectionContainer>

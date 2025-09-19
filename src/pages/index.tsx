@@ -20,7 +20,7 @@ export default function Home() {
 				/>
 				<meta
 					property="og:image"
-					content="https://seudominio.com/images/preview.png"
+					content="https://github.com/AntonioHamilton/teatro-esporte/blob/master/public/images/teatro-esporte-logo.png"
 				/>
 			</Head>
 			<SC.Main>
