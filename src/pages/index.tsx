@@ -9,7 +9,7 @@ export default function Home() {
 			<Head>
 				<title>Teatro Esporte: A Escola de Improviso em Aracaju</title>
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://seudominio.com" />
+				<meta property="og:url" content="https://teatro-esporte.vercel.app/" />
 				<meta
 					property="og:title"
 					content="Teatro Esporte: A Escola de Improviso em Aracaju"

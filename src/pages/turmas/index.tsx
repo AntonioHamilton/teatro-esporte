@@ -74,7 +74,7 @@ export default function Turmas() {
 					content="https://github.com/AntonioHamilton/teatro-esporte/blob/master/public/images/teatro-esporte-logo.png"
 				/>
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://seudominio.com" />
+				<meta property="og:url" content="https://teatro-esporte.vercel.app/" />
 			</Head>
 			<Menu variant={"dark"} />
 			<SC.SectionContainer>

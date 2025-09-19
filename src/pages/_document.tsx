@@ -12,7 +12,7 @@ export default function Document() {
 
 				{/* Open Graph (para WhatsApp, Facebook, LinkedIn etc.) */}
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://seudominio.com" />
+				<meta property="og:url" content="https://teatro-esporte.vercel.app/" />
 				<meta
 					property="og:title"
 					content="Teatro Esporte: A Escola de Improviso em Aracaju"
@@ -28,7 +28,7 @@ export default function Document() {
 
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:url" content="https://seudominio.com" />
+				<meta name="twitter:url" content="https://teatro-esporte.vercel.app/" />
 				<meta
 					name="twitter:title"
 					content="Teatro Esporte: A Escola de Improviso em Aracaju"
@@ -39,7 +39,7 @@ export default function Document() {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://seudominio.com/images/preview.png"
+					content="https://github.com/AntonioHamilton/teatro-esporte/blob/master/public/images/teatro-esporte-logo.png"
 				/>
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
