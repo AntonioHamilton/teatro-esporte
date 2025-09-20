@@ -31,7 +31,7 @@ export const About = () => {
 				</SC.TextWrapper>
 				<SC.ImageWrapper>
 					<Image
-						src="/images/teatro-esporte.jpg"
+						src="/images/teatro-esporte.webp"
 						alt="Rodolfo Lisboa e Matheus Mileto recebendo a premiação do Olho Mágico para talentos sergipanos de teatro de improviso"
 						width={800}
 						height={600}

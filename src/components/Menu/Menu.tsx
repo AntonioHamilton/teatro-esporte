@@ -29,6 +29,7 @@ export const Menu = ({ variant }: MenuProps) => {
 				<Image
 					src="/images/teatro-esporte-logo.png"
 					alt="Teatro Esporte Logo"
+					fetchPriority="high"
 					width={50}
 					height={50}
 				/>

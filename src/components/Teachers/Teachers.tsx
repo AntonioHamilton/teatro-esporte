@@ -21,7 +21,7 @@ export const Teachers = () => {
 									src={teacher.imageSrc}
 									alt={teacher.imageAlt}
 									width={200}
-									height={200}
+									height={282}
 								/>
 							</SC.ImageWrapper>
 							<SC.TeacherName>{teacher.name}</SC.TeacherName>

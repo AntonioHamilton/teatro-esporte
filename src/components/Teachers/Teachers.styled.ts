@@ -45,14 +45,10 @@ export const TeacherCard = styled.div`
 
 export const ImageWrapper = styled.div`
 	position: relative;
-	width: 200px;
-	height: 220px;
 	margin-bottom: 16px;
 
 	& img {
 		border-radius: 50%;
-		width: 100%;
-		height: 100%;
 		object-fit: cover;
 		clip-path: ellipse(50% 50% at 50% 50%); /* Exemplo de forma elíptica */
 	}

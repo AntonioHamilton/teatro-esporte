@@ -22,6 +22,8 @@ export const Header = () => (
 			<Image
 				src="/images/bg1.png"
 				alt="Grupo de atores da companhia Teatro Esporte de Aracaju em uma aula de teatro de Improviso."
+				fetchPriority="high"
+				priority
 				width={424}
 				height={600}
 			/>

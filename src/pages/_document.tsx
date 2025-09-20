@@ -45,12 +45,6 @@ export default function Document() {
 					name="twitter:image"
 					content="https://raw.githubusercontent.com/AntonioHamilton/teatro-esporte/refs/heads/master/public/images/teatro-esporte-logo.png"
 				/>
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-					rel="stylesheet"
-				/>
 			</Head>
 			<body>
 				<StyledComponentsRegistry>
