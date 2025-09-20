@@ -23,7 +23,7 @@ export default function Document() {
 				/>
 				<meta
 					property="og:image"
-					content="https://github.com/AntonioHamilton/teatro-esporte/blob/master/public/images/teatro-esporte-logo.png"
+					content="https://raw.githubusercontent.com/AntonioHamilton/teatro-esporte/refs/heads/master/public/images/teatro-esporte-logo.png"
 				/>
 
 				{/* Twitter Cards */}
@@ -39,7 +39,7 @@ export default function Document() {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://github.com/AntonioHamilton/teatro-esporte/blob/master/public/images/teatro-esporte-logo.png"
+					content="https://raw.githubusercontent.com/AntonioHamilton/teatro-esporte/refs/heads/master/public/images/teatro-esporte-logo.png"
 				/>
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -4,7 +4,10 @@ export const colors = {
 	highlightYellow: "#FFC300",
 	highlightBlue: "#36C9F6",
 	textWhite: "#FFFFFF",
-	darkText: "#1C1C1C"
+	darkText: "#1C1C1C",
+	coral: "#FF8C79",
+	softGray: "#F3F3F3",
+	lightRed: "#FF5757"
 };
 
 export const breakpoints = {

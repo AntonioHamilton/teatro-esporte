@@ -1,4 +1,5 @@
 // styles/menu.styled.js
+import { breakpoints } from "@/styles/variables.styled";
 import styled from "styled-components";
 
 export const MenuContainer = styled.header`
@@ -12,9 +13,13 @@ export const MenuContainer = styled.header`
 	align-items: center;
 	gap: 2.5rem;
 	padding: 2rem 0;
+
+	@media (max-width: ${breakpoints.md}) {
+		padding: 1rem 0;
+	}
 `;
 
-export const NavLink = styled.a<{ $isActive: string; $variant?: string }>`
+export const NavLink = styled.p<{ $isActive: string; $variant?: string }>`
 	font-size: 1.125rem;
 	font-weight: 500;
 	text-decoration: none;
