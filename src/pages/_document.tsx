@@ -6,6 +6,10 @@ export default function Document() {
 		<Html lang="en">
 			<Head>
 				<meta
+					name="google-site-verification"
+					content="-b0xQpqA7_wzAeTp13m-qkfFHKSqt0P7hrbJQB4WnwA"
+				/>
+				<meta
 					name="description"
 					content="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de improvisação e espetáculos de comédia."
 				/>
