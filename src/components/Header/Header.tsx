@@ -22,8 +22,8 @@ export const Header = () => (
 			<Image
 				src="/images/bg1.png"
 				alt="Grupo de atores da companhia Teatro Esporte de Aracaju em uma aula de teatro de Improviso."
-				width={500}
-				height={500}
+				width={424}
+				height={600}
 			/>
 		</SC.ImageWrapper>
 	</SC.Container>
