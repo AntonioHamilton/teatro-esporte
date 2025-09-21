@@ -4,10 +4,7 @@ import { useRouter } from "next/router";
 import * as SC from "./Menu.styled";
 import { links } from "@/constants/links";
 import { useState } from "react";
-import { Instagram } from "@components/Icons/Instagram";
-import { Whatsapp } from "@components/Icons/Whatsapp";
-import { Youtube } from "@components/Icons/Youtube";
-import { Spotify } from "@components/Icons/Spotify";
+import { socialLinks } from "@/constants/socialLinks";
 
 export const Menu = () => {
 	const router = useRouter();
@@ -68,13 +65,21 @@ export const Menu = () => {
 						</Link>
 					))}
 				</SC.DesktopLinks>
-				<SC.HamburgerButton onClick={toggleMenu}>
+				<SC.HamburgerButton
+					onClick={toggleMenu}
+					aria-label="Abrir menu"
+					aria-expanded={isMenuOpen}
+					aria-controls="mobile-menu"
+				>
 					<div />
 					<div />
 					<div />
 				</SC.HamburgerButton>
 			</SC.MenuContainer>
-			<SC.MobileMenuPanel $isOpen={isMenuOpen ? "true" : "false"}>
+			<SC.MobileMenuPanel
+				id="mobile-menu"
+				$isOpen={isMenuOpen ? "true" : "false"}
+			>
 				<SC.CloseButton onClick={toggleMenu}>
 					<div />
 					<div />
@@ -115,34 +120,17 @@ export const Menu = () => {
 					<SC.SocialMediaContainer>
 						<SC.SocialMediaHeading>Redes Sociais</SC.SocialMediaHeading>
 						<SC.SocialLinks>
-							<SC.SocialIcon
-								href="https://www.instagram.com/teatroesporte/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Instagram />
-							</SC.SocialIcon>
-							<SC.SocialIcon
-								href="https://wa.me/557991486259"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Whatsapp />
-							</SC.SocialIcon>
-							<SC.SocialIcon
-								href="https://www.youtube.com/channel/UCHqoO2ynN7cOCBgz7GHKEEw"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Youtube />
-							</SC.SocialIcon>
-							<SC.SocialIcon
-								href="https://open.spotify.com/show/71JYWIWmwlwXxRRjqRXsXI?si=010f07b705b44614"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Spotify />
-							</SC.SocialIcon>
+							{socialLinks.map((socialLink) => (
+								<SC.SocialIcon
+									key={socialLink.name}
+									href={socialLink.href}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={socialLink.ariaLabel}
+								>
+									{socialLink.icon}
+								</SC.SocialIcon>
+							))}
 						</SC.SocialLinks>
 					</SC.SocialMediaContainer>
 				</SC.MobileNav>

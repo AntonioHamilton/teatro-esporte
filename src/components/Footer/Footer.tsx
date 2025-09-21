@@ -1,11 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as SC from "./Footer.styled";
-import { Whatsapp } from "@components/Icons/Whatsapp";
 import { links } from "@/constants/links";
-import { Youtube } from "@components/Icons/Youtube";
-import { Spotify } from "@components/Icons/Spotify";
-import { Instagram } from "@components/Icons/Instagram";
+import { socialLinks } from "@/constants/socialLinks";
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -24,35 +21,18 @@ export const Footer = () => {
 				<SC.FooterColumn>
 					<SC.FooterHeading>Redes Sociais</SC.FooterHeading>
 					<SC.SocialLinks>
-						<SC.SocialIcon
-							href="https://www.instagram.com/teatroesporte/"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="instagram"
-						>
-							<Instagram />
-						</SC.SocialIcon>
-						<SC.SocialIcon
-							href="https://wa.me/557991486259"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Whatsapp />
-						</SC.SocialIcon>
-						<SC.SocialIcon
-							href="https://www.youtube.com/channel/UCHqoO2ynN7cOCBgz7GHKEEw"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Youtube />
-						</SC.SocialIcon>
-						<SC.SocialIcon
-							href="https://open.spotify.com/show/71JYWIWmwlwXxRRjqRXsXI?si=010f07b705b44614"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Spotify />
-						</SC.SocialIcon>
+						{socialLinks.map((socialLink) => (
+							<SC.SocialIcon
+								key={socialLink.name}
+								href={socialLink.href}
+								target="_blank"
+								rel="noopener noreferrer"
+								className={socialLink.name === "Instagram" ? "instagram" : ""}
+								aria-label={socialLink.ariaLabel}
+							>
+								{socialLink.icon}
+							</SC.SocialIcon>
+						))}
 					</SC.SocialLinks>
 				</SC.FooterColumn>
 
