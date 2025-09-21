@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import * as SC from "./Footer.styled";
 import { Whatsapp } from "@components/Icons/Whatsapp";
-import { Instagram } from "@components/Icons/Instagram";
 import { links } from "@/constants/links";
 import { Youtube } from "@components/Icons/Youtube";
 import { Spotify } from "@components/Icons/Spotify";
+import { Instagram } from "@components/Icons/Instagram";
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -28,6 +28,7 @@ export const Footer = () => {
 							href="https://www.instagram.com/teatroesporte/"
 							target="_blank"
 							rel="noopener noreferrer"
+							className="instagram"
 						>
 							<Instagram />
 						</SC.SocialIcon>

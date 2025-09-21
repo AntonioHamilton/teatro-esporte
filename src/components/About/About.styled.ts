@@ -41,7 +41,7 @@ export const TextWrapper = styled.div`
 
 export const Paragraph = styled.p`
 	font-size: 16px;
-	line-height: 1.6; /* Unidade sem medida para escalabilidade da fonte */
+	line-height: 1.6;
 	margin-bottom: 24px;
 
 	&:last-child {

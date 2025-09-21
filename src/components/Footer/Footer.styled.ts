@@ -79,8 +79,18 @@ export const SocialIcon = styled.a`
 	font-size: 24px;
 	transition: color 0.2s ease;
 
-	&:hover {
-		color: ${colors.highlightYellow};
+	&.instagram {
+		svg {
+			border-radius: 5px;
+			background: linear-gradient(
+				45deg,
+				#f09433 0%,
+				#e6683c 25%,
+				#dc2743 50%,
+				#cc2366 75%,
+				#bc1888 100%
+			);
+		}
 	}
 `;
 
