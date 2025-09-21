@@ -80,7 +80,12 @@ export const Menu = () => {
 				id="mobile-menu"
 				$isOpen={isMenuOpen ? "true" : "false"}
 			>
-				<SC.CloseButton onClick={toggleMenu}>
+				<SC.CloseButton
+					aria-label="Fechar menu"
+					aria-expanded={isMenuOpen}
+					aria-controls="mobile-menu"
+					onClick={toggleMenu}
+				>
 					<div />
 					<div />
 				</SC.CloseButton>

@@ -14,7 +14,7 @@ export default function Document() {
 					content="/images/teatro-esporte-logo.png"
 				/>
 				<meta
-					property="description"
+					name="description"
 					content="Teatro Esporte: A Escola de Teatro em Aracaju"
 				/>
 				<meta property="og:image" content="/images/teatro-esporte-logo.png" />

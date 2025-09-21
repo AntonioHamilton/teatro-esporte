@@ -93,11 +93,11 @@ export const ImageWrapper = styled.div`
 
 	img {
 		height: 600px;
-		width: fit-content;
+		width: 424px;
 
 		@media (max-width: ${breakpoints.lg}) {
 			height: 400px;
-			width: fit-content;
+			width: auto;
 		}
 
 		@media (max-width: ${breakpoints.sm}) {
