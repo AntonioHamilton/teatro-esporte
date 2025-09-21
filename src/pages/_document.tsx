@@ -1,10 +1,12 @@
 import StyledComponentsRegistry from "@/lib/registry";
 import { Html, Head, Main, NextScript } from "next/document";
+import Link from "next/link";
 
 export default function Document() {
 	return (
 		<Html lang="en">
 			<Head>
+				<Link rel="icon" href="/favicon.ico" />
 				<meta
 					name="google-site-verification"
 					content="-b0xQpqA7_wzAeTp13m-qkfFHKSqt0P7hrbJQB4WnwA"
@@ -13,7 +15,6 @@ export default function Document() {
 					name="description"
 					content="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de improvisação e espetáculos de comédia."
 				/>
-
 				{/* Open Graph (para WhatsApp, Facebook, LinkedIn etc.) */}
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://teatro-esporte.vercel.app/" />
