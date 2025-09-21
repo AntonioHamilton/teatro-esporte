@@ -1,5 +1,7 @@
 export const Whatsapp = () => (
 	<svg
+		width={32}
+		height={32}
 		xmlns="http://www.w3.org/2000/svg"
 		aria-label="WhatsApp"
 		role="img"
