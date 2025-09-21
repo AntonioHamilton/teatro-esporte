@@ -53,7 +53,7 @@ export const pastClasses: Classes[] = [
 		tags: ["Comédia Física", "Intensivo"]
 	},
 	{
-		title: "Workshop Palhaço Interior 🎪",
+		title: "Workshop Palhaço Interior 🤡",
 		description:
 			"Desperte seu Palhaço Interior! Você já sentiu aquela vontade de rir sem motivo, de soltar o que tem de mais espontâneo e verdadeiro dentro de você?",
 		imageSrc: "/images/workshop-palhaco-interior1.webp",
@@ -72,7 +72,7 @@ export const pastClasses: Classes[] = [
 		tags: ["Palhaçaria", "Autoconhecimento"]
 	},
 	{
-		title: "Palhaço Biruta 🤡",
+		title: "Palhaço Biruta 🤪",
 		description:
 			"Esse é uma palhaço nada convencional. Personagem criado por Rodolfo Lisboa, nosso diretor e ator, esse palhaço se mostra bem diferente dentro e fora dos palcos.",
 		imageSrc: "/images/palhaço-biruta.webp",

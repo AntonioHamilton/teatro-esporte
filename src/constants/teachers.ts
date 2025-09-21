@@ -9,7 +9,7 @@ type Teacher = {
 export const teachers: Teacher[] = [
 	{
 		name: "Rodolfo Lisboa",
-		bio: "Fundador, diretor e ator. Rodolfo é professor de improviso corporal, teatro tradicional e especialista em improvisação artística para crianças e adultos",
+		bio: "Fundador do Teatro Esporte, Rodolfo Lisboa é ator, diretor teatral e palhaço. Com sua expertise em improvisação, ele ensina técnicas que aprimoram a comunicação e a criatividade de seus alunos.",
 		imageSrc: "/images/rodolfo-lisboa.png",
 		imageAlt:
 			"Foto de Rodolfo Lisboa, diretor, ator e professor do Teatro Esporte.",
@@ -17,9 +17,9 @@ export const teachers: Teacher[] = [
 	},
 	{
 		name: "Mateus Mileto",
-		bio: "Ator e professor com anos de atuação no cenário de teatro sergipano, Mateus ajudou Rodolfo a começar o Teatro Esporte",
+		bio: "Cofundador do Teatro Esporte, Mateus Mileto é ator e professor com anos de experiência no cenário do teatro sergipano. Sua atuação foi fundamental para o início e desenvolvimento da companhia.",
 		imageSrc: "/images/mateus-mileto.png",
-		imageAlt: "Foto de Mateus Mileto, professor do Teatro Esporte.",
+		imageAlt: "Foto de Mateus Mileto, ator e professor do Teatro Esporte.",
 		socialUrl: "https://www.instagram.com/mateusmileto/"
 	}
 ];

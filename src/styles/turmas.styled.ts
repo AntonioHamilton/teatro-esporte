@@ -7,11 +7,11 @@ export const ClassesMain = styled.main`
 
 export const SectionContainer = styled.section`
 	background-color: ${colors.lightBackground};
-	padding: 96px 48px;
+	padding: 120px 48px 96px;
 	color: ${colors.darkText};
 
 	@media (max-width: ${breakpoints.md}) {
-		padding: 100px 24px 64px;
+		padding: 120px 24px 64px;
 		text-align: center;
 	}
 `;

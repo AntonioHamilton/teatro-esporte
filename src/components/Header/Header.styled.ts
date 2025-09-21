@@ -9,7 +9,7 @@ export const Container = styled.div`
 	gap: 72px;
 	width: 80%;
 	align-items: center;
-	padding: 0 24px;
+	padding: 100px 24px;
 
 	@media (max-width: ${breakpoints.lg}) {
 		padding: 0px 32px;

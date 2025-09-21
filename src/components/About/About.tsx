@@ -15,9 +15,10 @@ export const About = () => {
 						essenciais para o desenvolvimento pessoal e profissional.
 					</SC.Paragraph>
 					<SC.Paragraph>
-						Nossa <b>escola de teatro</b> oferece <b>aulas de improvisação</b>{" "}
-						para todas as idades, do iniciante ao avançado, ajudando cada aluno
-						a <b>melhorar sua comunicação</b> e{" "}
+						Nossa <b>escola de teatro</b> oferece{" "}
+						<b>aulas de teatro e improvisação</b> para todas as idades, do
+						iniciante ao avançado, ajudando cada aluno a{" "}
+						<b>melhorar sua comunicação</b> e{" "}
 						<b>aumentar seu potencial criativo</b>. Além de nossos cursos, somos
 						conhecidos por nossos <b>espetáculos de comédia</b> interativos, que
 						transformam as sugestões da plateia em cenas únicas e hilárias.

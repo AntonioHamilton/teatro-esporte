@@ -54,18 +54,18 @@ export const FooterLink = styled.a`
 
 export const SocialLinks = styled.div`
 	display: flex;
-	gap: 24px;
+	gap: 12px;
 	justify-content: flex-start;
 	align-items: center;
 
 	svg {
-		width: 24px;
-		height: 24px;
-		fill: ${colors.darkText};
-		transition: fill 0.2s ease;
+		width: 32px;
+		height: 32px;
+		transform: scale(1);
+		transition: transform 0.2s ease;
 
 		&:hover {
-			fill: ${colors.highlightYellow};
+			transform: scale(1.2);
 		}
 	}
 

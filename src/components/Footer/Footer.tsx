@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as SC from "./Footer.styled";
-import { WhatsappIcon } from "@components/Icons/Whatsapp";
+import { Whatsapp } from "@components/Icons/Whatsapp";
 import { Instagram } from "@components/Icons/Instagram";
 import { links } from "@/constants/links";
+import { Youtube } from "@components/Icons/Youtube";
+import { Spotify } from "@components/Icons/Spotify";
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -34,7 +36,21 @@ export const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<WhatsappIcon />
+							<Whatsapp />
+						</SC.SocialIcon>
+						<SC.SocialIcon
+							href="https://www.youtube.com/channel/UCHqoO2ynN7cOCBgz7GHKEEw"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Youtube />
+						</SC.SocialIcon>
+						<SC.SocialIcon
+							href="https://open.spotify.com/show/71JYWIWmwlwXxRRjqRXsXI?si=010f07b705b44614"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Spotify />
 						</SC.SocialIcon>
 					</SC.SocialLinks>
 				</SC.FooterColumn>
