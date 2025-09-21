@@ -4,10 +4,12 @@ import * as SC from "./Header.styled";
 export const Header = () => (
 	<SC.Container>
 		<SC.TextBlock>
-			<SC.Title>Teatro Esporte: A Escola de Teatro em Aracaju</SC.Title>
+			<SC.Title>
+				Teatro Esporte: A Escola de Teatro e Improviso em Aracaju
+			</SC.Title>
 			<SC.Subtitle>
 				Melhore sua comunicação e aumente seu potencial criativo através de
-				nossas aulas de teatro e espetáculos de comédia.
+				nossas aulas de teatro, improvisação e espetáculos de comédia.
 			</SC.Subtitle>
 			<SC.ButtonGroup>
 				<SC.Button href="/turmas" variant="primary">

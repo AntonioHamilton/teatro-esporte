@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import * as SC from "@styles/turmas.styled"; // Certifique-se de que este caminho está correto
-import { Menu } from "@components/Menu/Menu"; // Certifique-se de que este caminho está correto
+import * as SC from "@styles/turmas.styled";
+import { Menu } from "@components/Menu/Menu";
 import { adultClasses, kidsClasses, pastClasses } from "@/constants/classes";
 import { Footer } from "@components/Footer/Footer";
 
@@ -10,19 +10,30 @@ export default function Turmas() {
 	return (
 		<>
 			<Head>
-				<title>Teatro Esporte | Turmas de Improvisação em Aracaju</title>
+				<title>
+					Teatro Esporte | Turmas de Teatro e Improvisação em Aracaju
+				</title>
 				<meta
 					name="description"
-					content="Conheça nossas turmas de teatro de improvisação para adultos e crianças em Aracaju. Encontre a aula perfeita para desenvolver sua criatividade e comunicação."
+					content="Conheça nossas turmas de teatro e improvisação para adultos e crianças em Aracaju. Encontre a aula perfeita para desenvolver sua criatividade e comunicação."
+				/>
+				<link rel="canonical" href="https://teatro-esporte.com/turmas" />
+				{/* Facebook, Whatsapp, Instagram, Linkedin... */}
+				<meta
+					name="og:title"
+					content="Teatro Esporte | Turmas de Teatro e Improvisação em Aracaju"
 				/>
 				<meta
-					property="og:image"
-					content="https://raw.githubusercontent.com/AntonioHamilton/teatro-esporte/refs/heads/master/public/images/teatro-esporte-logo.png"
+					name="og:description"
+					content="Conheça nossas turmas de teatro e improvisação para adultos e crianças em Aracaju. Encontre a aula perfeita para desenvolver sua criatividade e comunicação."
 				/>
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://teatro-esporte.vercel.app/" />
+				<meta property="og:url" content="https://teatro-esporte.com/turmas" />
+				<meta property="og:locale" content="pt_BR" />
+				{/* Twitter Cards */}
+				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
-			<Menu variant={"dark"} /> {/* Ajuste o variant do menu se necessário */}
+			<Menu />
 			<SC.ClassesMain>
 				<SC.SectionContainer>
 					<SC.SectionTitle>Nossas Turmas</SC.SectionTitle>

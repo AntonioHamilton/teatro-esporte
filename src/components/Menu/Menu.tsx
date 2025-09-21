@@ -9,11 +9,7 @@ import { Whatsapp } from "@components/Icons/Whatsapp";
 import { Youtube } from "@components/Icons/Youtube";
 import { Spotify } from "@components/Icons/Spotify";
 
-type MenuProps = {
-	variant?: string;
-};
-
-export const Menu = ({ variant }: MenuProps) => {
+export const Menu = () => {
 	const router = useRouter();
 	const currentPath = router.pathname;
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +34,6 @@ export const Menu = ({ variant }: MenuProps) => {
 					{links.slice(0, 2).map((link) => (
 						<Link rel="noopener noreferrer" key={link.name} href={link.href}>
 							<SC.NavLink
-								$variant={variant || "white"}
 								$isActive={currentPath === link.href ? "true" : "false"}
 							>
 								{link.name}
@@ -66,7 +61,6 @@ export const Menu = ({ variant }: MenuProps) => {
 							}
 						>
 							<SC.NavLink
-								$variant={variant || "white"}
 								$isActive={currentPath === link.href ? "true" : "false"}
 							>
 								{link.name}

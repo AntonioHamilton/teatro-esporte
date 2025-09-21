@@ -29,7 +29,7 @@ export const MenuContainer = styled.header`
 	}
 `;
 
-export const NavLink = styled.p<{ $isActive: string; $variant?: string }>`
+export const NavLink = styled.p<{ $isActive: string }>`
 	font-size: 1.125rem;
 	font-weight: 500;
 	text-decoration: none;

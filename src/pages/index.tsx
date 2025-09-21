@@ -10,21 +10,26 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Teatro Esporte: A Escola de Improviso em Aracaju</title>
-				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://teatro-esporte.vercel.app/" />
+				<title>Teatro Esporte: A Escola de Teatro e Improviso em Aracaju</title>
+				<meta
+					property="description"
+					content="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de teatro, improvisação e espetáculos de comédia."
+				/>
+				<link rel="canonical" href="https://teatroesporte.com/" />
+				{/* Facebook, Whatsapp, Instagram, Linkedin... */}
 				<meta
 					property="og:title"
-					content="Teatro Esporte: A Escola de Improviso em Aracaju"
+					content="Teatro Esporte: A Escola de Teatro em Aracaju"
 				/>
 				<meta
 					property="og:description"
-					content="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de improvisação e espetáculos de comédia."
+					content="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de teatro, improvisação e espetáculos de comédia."
 				/>
-				<meta
-					property="og:image"
-					content="https://raw.githubusercontent.com/AntonioHamilton/teatro-esporte/refs/heads/master/public/images/teatro-esporte-logo.png"
-				/>
+				<meta property="og:locale" content="pt_BR" />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://teatro-esporte.com/" />
+				{/* Twitter Cards */}
+				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 			<SC.Main>
 				<Menu />
