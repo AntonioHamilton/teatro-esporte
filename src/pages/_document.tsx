@@ -1,9 +1,8 @@
-import StyledComponentsRegistry from "@/lib/registry";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
 	return (
-		<Html lang="pt_BR">
+		<Html lang="pt-BR">
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 				<meta
@@ -14,13 +13,15 @@ export default function Document() {
 					property="twitter:image"
 					content="/images/teatro-esporte-logo.png"
 				/>
+				<meta
+					property="description"
+					content="Teatro Esporte: A Escola de Teatro em Aracaju"
+				/>
 				<meta property="og:image" content="/images/teatro-esporte-logo.png" />
 			</Head>
 			<body>
-				<StyledComponentsRegistry>
-					<Main />
-					<NextScript />
-				</StyledComponentsRegistry>
+				<Main />
+				<NextScript />
 			</body>
 		</Html>
 	);

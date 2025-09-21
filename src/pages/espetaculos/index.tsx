@@ -15,7 +15,7 @@ const Espetaculos = () => (
 				name="description"
 				content="Confira a agenda de shows de teatro, improviso e comédia do Teatro Esporte em Aracaju. Descubra nossos próximos eventos e reveja os espetáculos passados."
 			/>
-			<link rel="canonical" href="https://teatro-esporte.com/espetaculos" />
+
 			{/* Facebook, Whatsapp, Instagram, Linkedin... */}
 			<meta
 				property="og:title"
@@ -29,7 +29,7 @@ const Espetaculos = () => (
 			<meta property="og:type" content="website" />
 			<meta
 				property="og:url"
-				content="https://teatro-esporte.com/espetaculos"
+				content="https://www.teatro-esporte.com/espetaculos"
 			/>
 			{/* Twitter Cards */}
 			<meta name="twitter:card" content="summary_large_image" />

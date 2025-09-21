@@ -9,11 +9,11 @@ export const Youtube = () => (
 		fill="#ff0000"
 		stroke="#ff0000"
 	>
-		<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+		<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 		<g
 			id="SVGRepo_tracerCarrier"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			strokeLinecap="round"
+			strokeLinejoin="round"
 		></g>
 		<g id="SVGRepo_iconCarrier">
 			<rect width="512" height="512" rx="15%"></rect>

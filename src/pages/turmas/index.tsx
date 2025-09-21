@@ -17,7 +17,6 @@ export default function Turmas() {
 					name="description"
 					content="Conheça nossas turmas de teatro e improvisação para adultos e crianças em Aracaju. Encontre a aula perfeita para desenvolver sua criatividade e comunicação."
 				/>
-				<link rel="canonical" href="https://teatro-esporte.com/turmas" />
 				{/* Facebook, Whatsapp, Instagram, Linkedin... */}
 				<meta
 					name="og:title"
@@ -28,7 +27,10 @@ export default function Turmas() {
 					content="Conheça nossas turmas de teatro e improvisação para adultos e crianças em Aracaju. Encontre a aula perfeita para desenvolver sua criatividade e comunicação."
 				/>
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://teatro-esporte.com/turmas" />
+				<meta
+					property="og:url"
+					content="https://www.teatro-esporte.com/turmas"
+				/>
 				<meta property="og:locale" content="pt_BR" />
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />

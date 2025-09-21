@@ -22,6 +22,7 @@ export const Teachers = () => {
 									alt={teacher.imageAlt}
 									width={200}
 									height={282}
+									priority
 								/>
 							</SC.ImageWrapper>
 							<SC.TeacherName>{teacher.name}</SC.TeacherName>

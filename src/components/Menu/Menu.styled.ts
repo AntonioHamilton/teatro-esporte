@@ -82,14 +82,17 @@ export const MobileMenuPanel = styled.div<{ $isOpen: string }>`
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;
+	height: 100dvh;
 	width: 100%;
 	background-color: #1c1c1c;
 	z-index: 55;
 	display: flex;
 	flex-direction: column;
 	padding: 4rem 2rem 2rem;
-	transition: transform 0.3s ease-in-out;
+	transition:
+		transform,
+		opacity 0.3s ease-in-out;
+	opacity: ${(props) => (props.$isOpen === "true" ? "1" : "0")};
 	transform: ${(props) =>
 		props.$isOpen === "true" ? "translateX(0)" : "translateX(-100%)"};
 

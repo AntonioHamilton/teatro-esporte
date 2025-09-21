@@ -8,18 +8,18 @@ export const Whatsapp = () => (
 		viewBox="0 0 512 512"
 		fill="#000000"
 	>
-		<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+		<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 		<g
 			id="SVGRepo_tracerCarrier"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			strokeLinecap="round"
+			strokeLinejoin="round"
 		></g>
 		<g id="SVGRepo_iconCarrier">
 			<rect width="512" height="512" rx="15%" fill="#25d366"></rect>
 			<path
 				fill="#25d366"
 				stroke="#ffffff"
-				stroke-width="26"
+				strokeWidth="26"
 				d="M123 393l14-65a138 138 0 1150 47z"
 			></path>
 			<path

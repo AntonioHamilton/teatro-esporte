@@ -15,7 +15,6 @@ export default function Home() {
 					property="description"
 					content="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de teatro, improvisação e espetáculos de comédia."
 				/>
-				<link rel="canonical" href="https://teatroesporte.com/" />
 				{/* Facebook, Whatsapp, Instagram, Linkedin... */}
 				<meta
 					property="og:title"
@@ -27,7 +26,7 @@ export default function Home() {
 				/>
 				<meta property="og:locale" content="pt_BR" />
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://teatro-esporte.com/" />
+				<meta property="og:url" content="https://www.teatro-esporte.com/" />
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
