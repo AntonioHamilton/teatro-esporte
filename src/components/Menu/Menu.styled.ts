@@ -88,7 +88,7 @@ export const MobileMenuPanel = styled.div<{ $isOpen: string }>`
 	z-index: 55;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem;
+	padding: 4rem 2rem 2rem;
 	transition: transform 0.3s ease-in-out;
 	transform: ${(props) =>
 		props.$isOpen === "true" ? "translateX(0)" : "translateX(-100%)"};
@@ -119,8 +119,15 @@ export const MobileNav = styled.nav`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
-	margin-top: 5rem;
+	justify-content: space-between;
+	height: 100%;
+`;
+
+export const MobileNavContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.25rem;
 `;
 
 export const MenuTitle = styled.h2`
@@ -132,4 +139,50 @@ export const MenuTitle = styled.h2`
 export const MobileNavLink = styled(NavLink)`
 	font-size: 1.5rem;
 	color: ${(props) => (props.$isActive === "true" ? "#facc15" : "#fff")};
+`;
+
+export const SocialMediaContainer = styled.div`
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+`;
+
+export const SocialMediaHeading = styled.h4`
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 8px;
+`;
+
+export const SocialLinks = styled.div`
+	display: flex;
+	gap: 12px;
+	justify-content: flex-start;
+	align-items: center;
+
+	svg {
+		width: 32px;
+		height: 32px;
+		transform: scale(1);
+		transition: transform 0.2s ease;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	@media (max-width: ${breakpoints.md}) {
+		justify-content: center;
+	}
+`;
+
+export const SocialIcon = styled.a`
+	color: ${colors.darkText};
+	font-size: 24px;
+	transition: color 0.2s ease;
+
+	&:hover {
+		color: ${colors.highlightYellow};
+	}
 `;

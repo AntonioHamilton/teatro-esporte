@@ -4,6 +4,10 @@ import { useRouter } from "next/router";
 import * as SC from "./Menu.styled";
 import { links } from "@/constants/links";
 import { useState } from "react";
+import { Instagram } from "@components/Icons/Instagram";
+import { Whatsapp } from "@components/Icons/Whatsapp";
+import { Youtube } from "@components/Icons/Youtube";
+import { Spotify } from "@components/Icons/Spotify";
 
 type MenuProps = {
 	variant?: string;
@@ -92,25 +96,61 @@ export const Menu = ({ variant }: MenuProps) => {
 						/>
 					</Link>
 
-					{links.map((link) => (
-						<Link
-							key={link.name}
-							rel="noopener noreferrer"
-							target={
-								link.name === "Contato" || link.name === "Contact"
-									? "_blank"
-									: ""
-							}
-							href={link.href}
-						>
-							<SC.MobileNavLink
-								$isActive={currentPath === link.href ? "true" : "false"}
-								onClick={toggleMenu}
+					<SC.MobileNavContainer>
+						{links.map((link) => (
+							<Link
+								key={link.name}
+								rel="noopener noreferrer"
+								target={
+									link.name === "Contato" || link.name === "Contact"
+										? "_blank"
+										: ""
+								}
+								href={link.href}
 							>
-								{link.name}
-							</SC.MobileNavLink>
-						</Link>
-					))}
+								<SC.MobileNavLink
+									$isActive={currentPath === link.href ? "true" : "false"}
+									onClick={toggleMenu}
+								>
+									{link.name}
+								</SC.MobileNavLink>
+							</Link>
+						))}
+					</SC.MobileNavContainer>
+
+					<SC.SocialMediaContainer>
+						<SC.SocialMediaHeading>Redes Sociais</SC.SocialMediaHeading>
+						<SC.SocialLinks>
+							<SC.SocialIcon
+								href="https://www.instagram.com/teatroesporte/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Instagram />
+							</SC.SocialIcon>
+							<SC.SocialIcon
+								href="https://wa.me/557991486259"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Whatsapp />
+							</SC.SocialIcon>
+							<SC.SocialIcon
+								href="https://www.youtube.com/channel/UCHqoO2ynN7cOCBgz7GHKEEw"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Youtube />
+							</SC.SocialIcon>
+							<SC.SocialIcon
+								href="https://open.spotify.com/show/71JYWIWmwlwXxRRjqRXsXI?si=010f07b705b44614"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Spotify />
+							</SC.SocialIcon>
+						</SC.SocialLinks>
+					</SC.SocialMediaContainer>
 				</SC.MobileNav>
 			</SC.MobileMenuPanel>
 		</>
