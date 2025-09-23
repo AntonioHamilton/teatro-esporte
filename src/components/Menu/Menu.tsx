@@ -5,6 +5,7 @@ import * as SC from "./Menu.styled";
 import { links } from "@/constants/links";
 import { useState } from "react";
 import { socialLinks } from "@/constants/socialLinks";
+import { DonationButton } from "@components/DonateButton/DonateButton";
 
 export const Menu = () => {
 	const router = useRouter();
@@ -17,6 +18,7 @@ export const Menu = () => {
 
 	return (
 		<>
+			<DonationButton className="desktop" />
 			<SC.MenuContainer>
 				<Link className="mobile-logo" href="/">
 					<Image
@@ -121,6 +123,8 @@ export const Menu = () => {
 							</Link>
 						))}
 					</SC.MobileNavContainer>
+
+					<DonationButton className="mobile" />
 
 					<SC.SocialMediaContainer>
 						<SC.SocialMediaHeading>Redes Sociais</SC.SocialMediaHeading>

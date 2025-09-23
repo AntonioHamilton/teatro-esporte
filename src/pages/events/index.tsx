@@ -27,10 +27,7 @@ const Espetaculos = () => (
 			/>
 			<meta property="og:locale" content="pt_BR" />
 			<meta property="og:type" content="website" />
-			<meta
-				property="og:url"
-				content="https://www.teatro-esporte.com/espetaculos"
-			/>
+			<meta property="og:url" content="https://www.teatro-esporte.com/events" />
 			{/* Twitter Cards */}
 			<meta name="twitter:card" content="summary_large_image" />
 		</Head>

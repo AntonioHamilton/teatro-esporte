@@ -29,7 +29,7 @@ export default function Turmas() {
 				<meta property="og:type" content="website" />
 				<meta
 					property="og:url"
-					content="https://www.teatro-esporte.com/turmas"
+					content="https://www.teatro-esporte.com/classes"
 				/>
 				<meta property="og:locale" content="pt_BR" />
 				{/* Twitter Cards */}
