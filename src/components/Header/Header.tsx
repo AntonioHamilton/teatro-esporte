@@ -1,33 +1,35 @@
 import Image from "next/image";
 import * as SC from "./Header.styled";
+import { useTranslation } from "@/hooks/useTranslation";
+import { HeaderTranslations } from "@/translations/Home";
 
-export const Header = () => (
-	<SC.Container>
-		<SC.TextBlock>
-			<SC.Title>
-				Teatro Esporte: A Escola de Teatro e Improviso em Aracaju
-			</SC.Title>
-			<SC.Subtitle>
-				Melhore sua comunicação e aumente seu potencial criativo através de
-				nossas aulas de teatro, improvisação e espetáculos de comédia.
-			</SC.Subtitle>
-			<SC.ButtonGroup>
-				<SC.Button href="/turmas" variant="primary">
-					Conheça Nossas Aulas de Improviso Teatral
-				</SC.Button>
-				{/* <SC.Button href="/tickets" variant="secondary">
-							Compre Ingressos para Nossos Espetáculos
-						</SC.Button> */}
-			</SC.ButtonGroup>
-		</SC.TextBlock>
-		<SC.ImageWrapper>
-			<Image
-				src="/images/bg1.png"
-				alt="Grupo de atores da companhia Teatro Esporte de Aracaju em uma aula de teatro de Improviso."
-				priority
-				width={424}
-				height={600}
-			/>
-		</SC.ImageWrapper>
-	</SC.Container>
-);
+export const Header = () => {
+	const { language } = useTranslation();
+	return (
+		<SC.Container>
+			<SC.TextBlock>
+				<SC.Title>{HeaderTranslations[language].header_title}</SC.Title>
+				<SC.Subtitle>
+					{HeaderTranslations[language].header_subtitle}
+				</SC.Subtitle>
+				<SC.ButtonGroup>
+					<SC.Button href="/classes" variant="primary">
+						{HeaderTranslations[language].header_button_classes}
+					</SC.Button>
+					{/* <SC.Button href="/tickets" variant="secondary">
+						{HeaderTranslations[language].header_button_tickets}
+					</SC.Button> */}
+				</SC.ButtonGroup>
+			</SC.TextBlock>
+			<SC.ImageWrapper>
+				<Image
+					src="/images/bg1.png"
+					alt={HeaderTranslations[language].header_image_alt}
+					priority
+					width={424}
+					height={600}
+				/>
+			</SC.ImageWrapper>
+		</SC.Container>
+	);
+};

@@ -61,6 +61,7 @@ export const Subtitle = styled.p`
 
 export const ButtonGroup = styled.div`
 	display: flex;
+	flex-direction: column;
 	gap: 16px;
 `;
 

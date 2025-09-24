@@ -8,7 +8,11 @@ export const MainContainer = styled.main`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 100px 24px 64px;
+	padding: 120px 48px 96px;
+
+	@media (max-width: ${breakpoints.md}) {
+		padding: 120px 24px 64px;
+	}
 `;
 
 export const Title = styled.h2`

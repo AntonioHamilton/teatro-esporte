@@ -3,9 +3,12 @@ import Link from "next/link";
 import * as SC from "./Footer.styled";
 import { links } from "@/constants/links";
 import { socialLinks } from "@/constants/socialLinks";
+import { CommonTranslations } from "@/translations/Common";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
+	const { language } = useTranslation();
 
 	return (
 		<SC.FooterContainer>
@@ -14,14 +17,16 @@ export const Footer = () => {
 					<Image
 						src="/images/teatro-esporte-logo.png"
 						alt="Teatro Esporte Logo"
-						width={120}
-						height={120}
+						width={60}
+						height={60}
 					/>
 				</SC.FooterColumn>
 				<SC.FooterColumn>
-					<SC.FooterHeading>Redes Sociais</SC.FooterHeading>
+					<SC.FooterHeading>
+						{CommonTranslations[language].social_media}
+					</SC.FooterHeading>
 					<SC.SocialLinks>
-						{socialLinks.map((socialLink) => (
+						{socialLinks[language].map((socialLink) => (
 							<SC.SocialIcon
 								key={socialLink.name}
 								href={socialLink.href}
@@ -37,17 +42,17 @@ export const Footer = () => {
 				</SC.FooterColumn>
 
 				<SC.FooterColumn>
-					<SC.FooterHeading>Endereço</SC.FooterHeading>
-					<SC.AddressText>
-						Rua Fictícia, 123
-						<br />
-						Bairro Central, Aracaju - SE
-					</SC.AddressText>
+					<SC.FooterHeading>
+						{CommonTranslations[language].address}
+					</SC.FooterHeading>
+					<SC.AddressText>Aracaju - SE</SC.AddressText>
 				</SC.FooterColumn>
 
 				<SC.FooterColumn>
-					<SC.FooterHeading>Links</SC.FooterHeading>
-					{links.map((link) => (
+					<SC.FooterHeading>
+						{CommonTranslations[language].links}
+					</SC.FooterHeading>
+					{links[language].map((link) => (
 						<Link key={link.name} href={link.href} passHref legacyBehavior>
 							<SC.FooterLink>{link.name}</SC.FooterLink>
 						</Link>
@@ -55,7 +60,7 @@ export const Footer = () => {
 				</SC.FooterColumn>
 			</SC.FooterContent>
 
-			<SC.Copyright>CIA Teatro Esporte &copy; {currentYear}</SC.Copyright>
+			<SC.Copyright>&copy; {currentYear} Teatro Esporte 🎭</SC.Copyright>
 		</SC.FooterContainer>
 	);
 };

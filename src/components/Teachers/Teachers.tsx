@@ -2,13 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import * as SC from "./Teachers.styled";
 import { teachers } from "@/constants/teachers";
+import { useTranslation } from "@/hooks/useTranslation";
+import { TeachersTranslations } from "@/translations/Home";
 
 export const Teachers = () => {
+	const { language } = useTranslation();
+
 	return (
 		<SC.TeachersSection>
-			<SC.SectionTitle>Conheça Nossos Professores</SC.SectionTitle>
+			<SC.SectionTitle>
+				{TeachersTranslations[language].teachers_title}
+			</SC.SectionTitle>
 			<SC.TeachersGrid>
-				{teachers.map((teacher) => (
+				{teachers[language].map((teacher) => (
 					<Link
 						href={teacher.socialUrl}
 						rel="noopener noreferrer"

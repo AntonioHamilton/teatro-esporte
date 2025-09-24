@@ -6,11 +6,15 @@ import { links } from "@/constants/links";
 import { useState } from "react";
 import { socialLinks } from "@/constants/socialLinks";
 import { DonationButton } from "@components/DonateButton/DonateButton";
+import { useTranslation } from "@/hooks/useTranslation";
+import { CommonTranslations } from "@/translations/Common";
+import { LanguageSelector } from "@components/LanguageSelector/LanguageSelector";
 
 export const Menu = () => {
 	const router = useRouter();
 	const currentPath = router.pathname;
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const { language } = useTranslation();
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
@@ -19,6 +23,7 @@ export const Menu = () => {
 	return (
 		<>
 			<DonationButton className="desktop" />
+			<LanguageSelector />
 			<SC.MenuContainer>
 				<Link className="mobile-logo" href="/">
 					<Image
@@ -30,7 +35,7 @@ export const Menu = () => {
 					/>
 				</Link>
 				<SC.DesktopLinks>
-					{links.slice(0, 2).map((link) => (
+					{links[language].slice(0, 2).map((link) => (
 						<Link rel="noopener noreferrer" key={link.name} href={link.href}>
 							<SC.NavLink
 								$isActive={currentPath === link.href ? "true" : "false"}
@@ -48,7 +53,7 @@ export const Menu = () => {
 							height={40}
 						/>
 					</Link>
-					{links.slice(2).map((link) => (
+					{links[language].slice(2).map((link) => (
 						<Link
 							key={link.name}
 							href={link.href}
@@ -69,7 +74,7 @@ export const Menu = () => {
 				</SC.DesktopLinks>
 				<SC.HamburgerButton
 					onClick={toggleMenu}
-					aria-label="Abrir menu"
+					aria-label={CommonTranslations[language].menu_mobile_open_aria_label}
 					aria-expanded={isMenuOpen}
 					aria-controls="mobile-menu"
 				>
@@ -83,7 +88,7 @@ export const Menu = () => {
 				$isOpen={isMenuOpen ? "true" : "false"}
 			>
 				<SC.CloseButton
-					aria-label="Fechar menu"
+					aria-label={CommonTranslations[language].menu_mobile_close_aria_label}
 					aria-expanded={isMenuOpen}
 					aria-controls="mobile-menu"
 					onClick={toggleMenu}
@@ -103,7 +108,7 @@ export const Menu = () => {
 					</Link>
 
 					<SC.MobileNavContainer>
-						{links.map((link) => (
+						{links[language].map((link) => (
 							<Link
 								key={link.name}
 								rel="noopener noreferrer"
@@ -127,9 +132,11 @@ export const Menu = () => {
 					<DonationButton className="mobile" />
 
 					<SC.SocialMediaContainer>
-						<SC.SocialMediaHeading>Redes Sociais</SC.SocialMediaHeading>
+						<SC.SocialMediaHeading>
+							{CommonTranslations[language].social_media}
+						</SC.SocialMediaHeading>
 						<SC.SocialLinks>
-							{socialLinks.map((socialLink) => (
+							{socialLinks[language].map((socialLink) => (
 								<SC.SocialIcon
 									key={socialLink.name}
 									href={socialLink.href}

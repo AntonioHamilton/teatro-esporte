@@ -5,8 +5,12 @@ import * as SC from "@styles/turmas.styled";
 import { Menu } from "@components/Menu/Menu";
 import { adultClasses, kidsClasses, pastClasses } from "@/constants/classes";
 import { Footer } from "@components/Footer/Footer";
+import { useTranslation } from "@/hooks/useTranslation";
+import { ClassesTranslations } from "@/translations/Classes";
 
 export default function Turmas() {
+	const { language } = useTranslation();
+
 	return (
 		<>
 			<Head>
@@ -38,12 +42,16 @@ export default function Turmas() {
 			<Menu />
 			<SC.ClassesMain>
 				<SC.SectionContainer>
-					<SC.SectionTitle>Nossas Turmas</SC.SectionTitle>
-					{adultClasses.length > 0 && (
+					<SC.SectionTitle>
+						{ClassesTranslations[language].section_title}
+					</SC.SectionTitle>
+					{adultClasses[language].length > 0 && (
 						<>
-							<SC.SectionHeader>Adultos</SC.SectionHeader>
+							<SC.SectionHeader>
+								{ClassesTranslations[language].section_header_adults}
+							</SC.SectionHeader>
 							<SC.CardsGrid>
-								{adultClasses.map((cl, index) => (
+								{adultClasses[language].map((cl, index) => (
 									<SC.ClassCard key={cl.title}>
 										<SC.CardImageSection>
 											<Image
@@ -69,7 +77,9 @@ export default function Turmas() {
 											</div>
 											{cl.href && (
 												<Link href={cl.href} passHref legacyBehavior>
-													<SC.ButtonLink>Inscreva-se Agora</SC.ButtonLink>
+													<SC.ButtonLink>
+														{ClassesTranslations[language].button_enroll}
+													</SC.ButtonLink>
 												</Link>
 											)}
 										</SC.CardContent>
@@ -79,11 +89,13 @@ export default function Turmas() {
 						</>
 					)}
 
-					{kidsClasses.length > 0 && (
+					{kidsClasses[language].length > 0 && (
 						<>
-							<SC.SectionHeader>Crianças e Jovens</SC.SectionHeader>
+							<SC.SectionHeader>
+								{ClassesTranslations[language].section_header_kids}
+							</SC.SectionHeader>
 							<SC.CardsGrid>
-								{kidsClasses.map((cl) => (
+								{kidsClasses[language].map((cl) => (
 									<SC.ClassCard key={cl.title}>
 										<SC.CardImageSection>
 											<Image
@@ -98,7 +110,7 @@ export default function Turmas() {
 												<SC.CardTitle>{cl.title}</SC.CardTitle>
 												{cl.tags && (
 													<SC.TagsContainer>
-														{cl.tags.map((tag) => (
+														{cl.tags.map((tag: string) => (
 															<SC.Tag key={tag}>{tag}</SC.Tag>
 														))}
 													</SC.TagsContainer>
@@ -109,7 +121,9 @@ export default function Turmas() {
 											</div>
 											{cl.href && (
 												<Link href={cl.href} passHref legacyBehavior>
-													<SC.ButtonLink>Inscreva-se Agora</SC.ButtonLink>
+													<SC.ButtonLink>
+														{ClassesTranslations[language].button_enroll}
+													</SC.ButtonLink>
 												</Link>
 											)}
 										</SC.CardContent>
@@ -119,11 +133,13 @@ export default function Turmas() {
 						</>
 					)}
 				</SC.SectionContainer>
-				{pastClasses.length > 0 && (
+				{pastClasses[language].length > 0 && (
 					<SC.PastProjectsSection>
-						<SC.PastProjectsTitle>Projetos Passados</SC.PastProjectsTitle>
+						<SC.PastProjectsTitle>
+							{ClassesTranslations[language].section_header_past}
+						</SC.PastProjectsTitle>
 						<SC.CardsGrid>
-							{pastClasses.map((cl) => (
+							{pastClasses[language].map((cl) => (
 								<SC.ClassCard key={cl.title}>
 									<SC.CardImageSection>
 										<Image
@@ -147,7 +163,9 @@ export default function Turmas() {
 										</div>
 										{cl.href && (
 											<Link href={cl.href} passHref legacyBehavior>
-												<SC.ButtonLink>Ver Fotos</SC.ButtonLink>
+												<SC.ButtonLink>
+													{ClassesTranslations[language].button_see_more}
+												</SC.ButtonLink>
 											</Link>
 										)}
 									</SC.CardContent>
