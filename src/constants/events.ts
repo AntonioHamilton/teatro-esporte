@@ -15,22 +15,25 @@ type Events = {
 export const events: Events = {
 	PT_BR: [
 		{
-			title: "Quem ri por último?",
-			date: "10 mai - 19:30",
-			location: "Teatro do Purificação - Aracaju, SE",
-			imageSrc: "/images/tickets/quem-ri-por-ultimo.webp",
-			imageAlt: "ingresso do espetáculo quem ri por último, teatro esporte",
-			href: "https://www.instagram.com/p/DIEYQ0aOdeg/"
+			title:
+				"Noite secreta do clube do improviso que acontece a cada 3 meses se for em um sábado e todos estiverem disponíveis",
+			date: "06 Dez - 19:30",
+			location: "Espaço Cultural Yazigi - Aracaju, SE",
+			imageSrc: "/images/tickets/noite-do-improviso.jpg",
+			imageAlt:
+				"ingresso do espetáculo noite secreta do improviso, teatro esporte",
+			href: "https://www.instagram.com/p/DQcDFXwjuCQ/"
 		}
 	],
 	EN_US: [
 		{
-			title: "Who laughs last?",
-			date: "May 10 - 7:30 PM",
-			location: "Teatro do Purificação - Aracaju, SE",
-			imageSrc: "/images/tickets/quem-ri-por-ultimo.webp",
-			imageAlt: "ticket for the show Who laughs last, teatro esporte",
-			href: "https://www.instagram.com/p/DIEYQ0aOdeg/"
+			title:
+				"Secret Improv Club Night, held every 3 months if it falls on a Saturday and everyone is available",
+			date: "Dec 10 - 7:30 PM",
+			location: "Espaço Cultural Yazigi - Aracaju, SE",
+			imageSrc: "/images/tickets/noite-do-improviso.jpg",
+			imageAlt: "ticket for the show Secret Improv Club Night, teatro esporte",
+			href: "https://www.instagram.com/p/DQcDFXwjuCQ/"
 		}
 	]
 };
