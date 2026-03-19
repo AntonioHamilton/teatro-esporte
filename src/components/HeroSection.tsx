@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-teatro.jpg";
+import heroImage from "@/assets/impro-masters.webp";
 
 const HeroSection = () => {
   return (
@@ -16,13 +16,13 @@ const HeroSection = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, hsl(240 10% 3.9% / 0.92) 0%, hsl(240 10% 3.9% / 0.7) 50%, hsl(240 10% 3.9% / 0.4) 100%)",
+              "linear-gradient(to right, hsl(0 0% 11% / 0.92) 0%, hsl(0 0% 11% / 0.7) 50%, hsl(0 0% 11% / 0.4) 100%)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(to bottom, transparent 60%, hsl(240 10% 3.9%))",
+            background: "linear-gradient(to bottom, transparent 60%, hsl(0 0% 11%))",
           }}
         />
       </div>

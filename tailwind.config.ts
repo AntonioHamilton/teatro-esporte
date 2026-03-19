@@ -69,7 +69,7 @@ export default {
       },
       boxShadow: {
         'card': '0 0 0 1px rgba(255,255,255,0.05), 0 8px 16px -4px rgba(0,0,0,0.5)',
-        'glow': '0 0 20px rgba(220, 38, 38, 0.3)',
+        'glow': '0 0 20px rgba(255, 195, 0, 0.35)',
       },
       keyframes: {
         "accordion-down": {

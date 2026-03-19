@@ -1,34 +1,35 @@
 import { motion } from "framer-motion";
-import courseImage from "@/assets/course-improv.jpg";
-import workshopImage from "@/assets/workshop.jpg";
+import espetaculoImage from "@/assets/espetaculo1.webp";
+import palhacoImage from "@/assets/palhaco-biruta.webp";
+import academiaImage from "@/assets/academia-despertar-criativo.webp";
 
 const shows = [
   {
-    title: "Match de Improviso",
-    date: "22",
-    month: "MAR",
+    title: "Quem Ri Por Último",
+    date: "10",
+    month: "MAI",
     day: "SÁB",
-    time: "20h",
-    image: courseImage,
-    description: "Duas equipes, uma plateia e zero roteiro. Você decide quem vence.",
+    time: "19h30",
+    image: espetaculoImage,
+    description: "Batalha de improvisadores. Duas equipes, uma plateia e zero roteiro.",
   },
   {
-    title: "Cenas Improváveis",
-    date: "29",
-    month: "MAR",
+    title: "Noite do Improviso",
+    date: "24",
+    month: "MAI",
     day: "SÁB",
     time: "20h",
-    image: workshopImage,
+    image: palhacoImage,
     description: "Comédia criada ao vivo a partir das sugestões da plateia.",
   },
   {
-    title: "Improv Night",
-    date: "05",
-    month: "ABR",
+    title: "Despertar Criativo",
+    date: "17",
+    month: "MAI",
     day: "SÁB",
-    time: "20h",
-    image: courseImage,
-    description: "Uma noite inteira dedicada ao melhor do improviso sergipano.",
+    time: "14h",
+    image: academiaImage,
+    description: "Workshop de teatro para iniciantes. Vagas limitadas!",
   },
 ];
 
@@ -71,7 +72,7 @@ const ShowsSection = () => {
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "linear-gradient(to bottom, transparent 30%, hsl(240 10% 3.9% / 0.95))",
+                  background: "linear-gradient(to bottom, transparent 30%, hsl(0 0% 11% / 0.95))",
                 }}
               />
 
@@ -101,7 +102,9 @@ const ShowsSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="#"
+            href="https://wa.me/5579991486259?text=Quero%20garantir%20meu%20ingresso!"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-primary text-sm font-medium hover:underline underline-offset-4"
           >
             Garanta seu lugar na arquibancada →

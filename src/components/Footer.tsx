@@ -1,4 +1,5 @@
-import { Instagram, Mail, MapPin } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import logo from "@/assets/teatro-esporte-logo.png";
 
 const Footer = () => {
   return (
@@ -6,9 +7,12 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="font-display text-xl font-bold tracking-tight text-foreground mb-4">
-              TEATRO<span className="text-primary">ESPORTE</span>
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="Teatro Esporte" className="h-10 w-10" />
+              <h3 className="font-display text-xl font-bold tracking-tight text-foreground">
+                TEATRO<span className="text-primary">ESPORTE</span>
+              </h3>
+            </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               A principal companhia de teatro de improvisação em Aracaju.
               Espetáculos, cursos e workshops corporativos.
@@ -38,6 +42,14 @@ const Footer = () => {
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Instagram size={16} strokeWidth={1.5} /> @teatroesporte
+              </a>
+              <a
+                href="https://wa.me/5579991486259"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Phone size={16} strokeWidth={1.5} /> (79) 9 9148-6259
               </a>
               <a
                 href="mailto:contato@teatro-esporte.com"
