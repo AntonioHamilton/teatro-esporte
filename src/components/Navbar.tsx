@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/teatro-esporte-logo.png";
 
 const navItems = [
   { label: "Espetáculos", href: "#espetaculos" },
@@ -15,8 +16,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <a href="#" className="font-display text-xl font-bold tracking-tight text-foreground">
-          TEATRO<span className="text-primary">ESPORTE</span>
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="Teatro Esporte" className="h-10 w-10" />
+          <span className="font-display text-xl font-bold tracking-tight text-foreground">
+            TEATRO<span className="text-primary">ESPORTE</span>
+          </span>
         </a>
 
         {/* Desktop */}
@@ -31,7 +35,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://wa.me/5579999999999?text=Quero%20improvisar!"
+            href="https://wa.me/5579991486259?text=Quero%20improvisar!"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-medium hover:shadow-glow transition-shadow duration-300"
@@ -66,7 +70,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="https://wa.me/5579999999999?text=Quero%20improvisar!"
+                href="https://wa.me/5579991486259?text=Quero%20improvisar!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground px-5 py-3 rounded-md text-sm font-medium text-center"
