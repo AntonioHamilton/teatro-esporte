@@ -73,7 +73,7 @@ const CoursesSection = () => {
           className="mt-12"
         >
           <a
-            href="https://wa.me/5579999999999?text=Quero%20saber%20sobre%20as%20turmas!"
+            href="https://api.whatsapp.com/send/?phone=557991486259&text=Ol%C3%A1%2C%20quero%20saber%20sobre%20as%20turmas!&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3.5 rounded-lg font-medium hover:shadow-glow transition-shadow duration-300"
