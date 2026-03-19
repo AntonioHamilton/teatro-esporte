@@ -54,14 +54,17 @@ const ShowsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {shows.map((show, i) => (
-            <motion.div
+            <motion.a
               key={show.title}
+              href={`https://api.whatsapp.com/send/?phone=557991486259&text=${encodeURIComponent(`Olá, quero participar do ${show.title}!`)}&type=phone_number&app_absent=0`}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.05, ease: [0.2, 0, 0, 1] }}
               whileHover={{ y: -4 }}
-              className="group relative rounded-2xl overflow-hidden shadow-card cursor-pointer"
+              className="group relative rounded-2xl overflow-hidden shadow-card cursor-pointer block"
               style={{ aspectRatio: "3/4" }}
             >
               <img
@@ -72,7 +75,7 @@ const ShowsSection = () => {
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "linear-gradient(to bottom, transparent 30%, hsl(0 0% 11% / 0.95))",
+                  background: "linear-gradient(to bottom, transparent 30%, hsl(0 0% 11%))",
                 }}
               />
 
@@ -91,7 +94,7 @@ const ShowsSection = () => {
                 <h3 className="text-xl font-bold text-foreground mb-2">{show.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{show.description}</p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 
