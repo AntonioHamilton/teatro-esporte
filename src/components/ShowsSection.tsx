@@ -102,7 +102,7 @@ const ShowsSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/5579991486259?text=Quero%20garantir%20meu%20ingresso!"
+            href="https://api.whatsapp.com/send/?phone=557991486259&text=Ol%C3%A1%2C%20quero%20garantir%20meu%20ingresso!&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary text-sm font-medium hover:underline underline-offset-4"

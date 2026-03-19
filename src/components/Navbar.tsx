@@ -35,7 +35,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://wa.me/5579991486259?text=Quero%20improvisar!"
+            href="https://api.whatsapp.com/send/?phone=557991486259&text=Ol%C3%A1%2C%20quero%20improvisar!&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-medium hover:shadow-glow transition-shadow duration-300"
@@ -70,7 +70,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="https://wa.me/5579991486259?text=Quero%20improvisar!"
+                href="https://api.whatsapp.com/send/?phone=557991486259&text=Ol%C3%A1%2C%20quero%20improvisar!&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground px-5 py-3 rounded-md text-sm font-medium text-center"

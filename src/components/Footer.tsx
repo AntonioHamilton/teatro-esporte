@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, MapPin, Phone, Youtube, Music, Heart } from "lucide-react";
 import logo from "@/assets/teatro-esporte-logo.png";
 
 const Footer = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-3">
               <a
-                href="https://www.instagram.com/teatroesporte"
+                href="https://www.instagram.com/teatroesporte/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -44,7 +44,7 @@ const Footer = () => {
                 <Instagram size={16} strokeWidth={1.5} /> @teatroesporte
               </a>
               <a
-                href="https://wa.me/5579991486259"
+                href="https://api.whatsapp.com/send/?phone=557991486259&text=Ol%C3%A1%2C%20quero%20aprender%20improviso!&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -52,10 +52,20 @@ const Footer = () => {
                 <Phone size={16} strokeWidth={1.5} /> (79) 9 9148-6259
               </a>
               <a
-                href="mailto:contato@teatro-esporte.com"
+                href="https://www.youtube.com/channel/UCHqoO2ynN7cOCBgz7GHKEEw"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Mail size={16} strokeWidth={1.5} /> contato@teatro-esporte.com
+                <Youtube size={16} strokeWidth={1.5} /> YouTube
+              </a>
+              <a
+                href="https://open.spotify.com/show/71JYWIWmwlwXxRRjqRXsXI?nd=1&dlsi=e7e2bc364eb24b98"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Music size={16} strokeWidth={1.5} /> Spotify
               </a>
               <span className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin size={16} strokeWidth={1.5} /> Aracaju, SE
@@ -64,10 +74,19 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 text-center">
+        <div className="border-t border-border mt-12 pt-8 flex items-center justify-center gap-4">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} Teatro Esporte. Todos os direitos reservados.
           </p>
+          <a
+            href="https://donate.stripe.com/28E9AS93ydLZ6l7bKJfbq00"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground/30 hover:text-primary/60 transition-colors"
+            title="Apoie o Teatro Esporte"
+          >
+            <Heart size={14} strokeWidth={1.5} />
+          </a>
         </div>
       </div>
     </footer>
