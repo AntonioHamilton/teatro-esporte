@@ -5,32 +5,32 @@ import academiaImage from "@/assets/academia-despertar-criativo.webp";
 
 const shows = [
   {
-    title: "Quem Ri Por Último",
-    date: "10",
-    month: "MAI",
+    title: "Despertar Criativo",
+    date: "14",
+    month: "MAR",
     day: "SÁB",
-    time: "19h30",
+    time: "14h - 14/03/2026",
+    image: academiaImage,
+    description: "Workshop de teatro para iniciantes. Vagas limitadas!",
+  },
+  {
+    title: "Quem Ri Por Último",
+    date: "07",
+    month: "MAR",
+    day: "SÁB",
+    time: "19h30 - 07/03/2026",
     image: espetaculoImage,
     description: "Batalha de improvisadores. Duas equipes, uma plateia e zero roteiro.",
   },
   {
     title: "Noite do Improviso",
-    date: "24",
-    month: "MAI",
+    date: "06",
+    month: "DEZ",
     day: "SÁB",
-    time: "20h",
+    time: "20h - 06/12/2025",
     image: palhacoImage,
     description: "Comédia criada ao vivo a partir das sugestões da plateia.",
-  },
-  {
-    title: "Despertar Criativo",
-    date: "17",
-    month: "MAI",
-    day: "SÁB",
-    time: "14h",
-    image: academiaImage,
-    description: "Workshop de teatro para iniciantes. Vagas limitadas!",
-  },
+  }
 ];
 
 const ShowsSection = () => {

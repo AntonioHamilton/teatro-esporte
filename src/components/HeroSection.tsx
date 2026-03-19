@@ -10,7 +10,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Espetáculo de improviso do Teatro Esporte"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[0_20%]"
         />
         <div
           className="absolute inset-0"
