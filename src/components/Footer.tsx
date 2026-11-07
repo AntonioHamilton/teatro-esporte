@@ -1,3 +1,4 @@
+import { Heart } from "lucide-react";
 import Brand from "@/components/Brand";
 import { whatsapp } from "@/lib/whatsapp";
 
@@ -36,6 +37,15 @@ const Footer = () => (
     <div className="absolute left-[calc(var(--ox)+920px)] top-[452px]">
       <Brand esporteClassName="text-ink" />
     </div>
+    <a
+      href="https://donate.stripe.com/28E9AS93ydLZ6l7bKJfbq00"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Apoie o Teatro Esporte"
+      className="absolute left-[calc(var(--ox)+1172px)] top-[466px] text-black/60 transition-colors hover:text-black"
+    >
+      <Heart size={16} strokeWidth={1.5} />
+    </a>
   </footer>
 );
 
