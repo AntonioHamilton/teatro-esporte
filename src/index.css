@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 11%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 11%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 195 91% 59%;
+    --accent-foreground: 0 0% 11%;
+
+    --destructive: 0 100% 67%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 22%;
+    --ring: 45 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 11%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 100% 50%;
+    --sidebar-primary-foreground: 0 0% 11%;
+    --sidebar-accent: 0 0% 18%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 45 100% 50%;
+
+    /* Custom tokens */
+    --coral: 8 100% 74%;
+    --light-red: 0 100% 67%;
+    --glow-primary: 0 0 20px hsla(45, 100%, 50%, 0.3);
+    --shadow-card: 0 0 0 1px rgba(255,255,255,0.05), 0 8px 16px -4px rgba(0,0,0,0.5);
+    --gradient-overlay: linear-gradient(to bottom, transparent 40%, hsl(0 0% 11%));
+
+    /* Paleta da logo do Teatro Esporte */
+    --cream: #f1ebe2;
+    --ink: #0d0d0d;
+    --brand: #f2ae2e;
+    --brand-hover: #d9933d;
+    --ember: #d9933d;
+    --sun: #f2e205;
+    --sky: #50d4f2;
+    --circle: #d9d6d1;
+    --rings-color: rgba(0, 0, 0, 0.07);
+    --link-hover: rgba(242, 174, 46, 0.25);
+
+    /* Deslocamento do conteúdo de 1280px centralizado na tela */
+    --ox: max(0px, calc((100vw - 1280px) / 2));
+    /* Quanto a tela passa de 1280px */
+    --t: max(0px, calc(100vw - 1280px));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(45 100% 50%), hsl(45 100% 65%));
+  }
+}
+
+@layer components {
+  /* Círculos concêntricos de fundo; o centro do elemento é o centro dos anéis */
+  .rings {
+    @apply pointer-events-none absolute -z-10 h-[2800px] w-[2800px] -mt-[1400px] -ml-[1400px];
+    background:
+      radial-gradient(circle, transparent 155px, var(--rings-color) 156px 157px, transparent 158px),
+      radial-gradient(circle, transparent 195px, var(--rings-color) 196px 197px, transparent 198px),
+      radial-gradient(circle, transparent 243px, var(--rings-color) 244px 245px, transparent 246px),
+      radial-gradient(circle, transparent 304px, var(--rings-color) 305px 306px, transparent 307px),
+      radial-gradient(circle, transparent 383px, var(--rings-color) 384px 385px, transparent 386px),
+      radial-gradient(circle, transparent 488px, var(--rings-color) 489px 490px, transparent 491px),
+      radial-gradient(circle, transparent 639px, var(--rings-color) 640px 641px, transparent 642px),
+      radial-gradient(circle, transparent 819px, var(--rings-color) 820px 821px, transparent 822px),
+      radial-gradient(circle, transparent 1049px, var(--rings-color) 1050px 1051px, transparent 1052px),
+      radial-gradient(circle, transparent 1349px, var(--rings-color) 1350px 1351px, transparent 1352px);
+  }
+
+  /* Silhuetas: foto em contraste alto, multiplicada sobre o fundo claro */
+  .silhouette {
+    @apply pointer-events-none absolute;
+    filter: grayscale(1) brightness(1.8) contrast(20);
+    mix-blend-mode: multiply;
+    clip-path: inset(28% 27% 20% 14%);
+  }
+}
