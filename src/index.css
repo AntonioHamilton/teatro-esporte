@@ -112,7 +112,7 @@
 
   /* Silhuetas: foto em contraste alto, multiplicada sobre o fundo claro */
   .silhouette {
-    @apply pointer-events-none absolute;
+    @apply pointer-events-none;
     filter: grayscale(1) brightness(1.8) contrast(20);
     mix-blend-mode: multiply;
     clip-path: inset(28% 27% 20% 14%);

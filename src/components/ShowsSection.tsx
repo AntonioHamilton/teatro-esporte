@@ -34,11 +34,11 @@ const shows = [
 ];
 
 const ShowsSection = () => (
-  <section id="espetaculos" className="relative h-[640px]">
-    <h2 className="absolute left-[calc(var(--ox)+120px)] top-[121px] font-serif text-[46.4px] font-semibold leading-[46.4px] tracking-[-0.01em]">
+  <section id="espetaculos" className="relative px-6 py-20 md:px-10 xl:h-[640px] xl:px-0 xl:py-0">
+    <h2 className="mb-10 font-serif text-[36px] font-semibold leading-[1.1] tracking-[-0.01em] md:text-[42px] xl:absolute xl:left-[calc(var(--ox)+120px)] xl:top-[121px] xl:mb-0 xl:text-[46.4px] xl:leading-[46.4px]">
       Próximos jogos
     </h2>
-    <div className="absolute left-[calc(var(--ox)+120px)] top-[219px] grid w-[1040px] grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-3 xl:absolute xl:left-[calc(var(--ox)+120px)] xl:top-[219px] xl:w-[1040px] xl:gap-6">
       {shows.map((show) => (
         <a
           key={show.title}

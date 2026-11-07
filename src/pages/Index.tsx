@@ -12,7 +12,7 @@ import Seo from "@/components/Seo";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen overflow-x-clip bg-cream pt-[113px] text-ink">
+    <div className="relative min-h-screen overflow-x-clip bg-cream pt-[72px] text-ink xl:pt-[113px]">
       <Seo
         title="Teatro Esporte: A Escola de Teatro e Improviso em Aracaju"
         description="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de teatro, improvisação e espetáculos de comédia."
