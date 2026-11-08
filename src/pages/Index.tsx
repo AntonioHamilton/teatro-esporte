@@ -182,7 +182,7 @@ export default function Index() {
             </a>
           </div>
         </div>
-        <figure className="hero-figure" data-parallax="0.12">
+        <figure className="hero-figure">
           <span className="dot dot-1" />
           <span className="dot dot-2" />
           <div className="hero-media">
@@ -275,7 +275,7 @@ export default function Index() {
       </section>
 
       <section className="founder" id="sobre">
-        <div className="abs founder-photo" data-parallax="0.12">
+        <div className="abs founder-photo">
           <img src={`${IMG}/rodolfo-lisboa.png`} alt="Rodolfo Lisboa" />
         </div>
         <p className="abs founder-name">Teatro Esporte</p>
