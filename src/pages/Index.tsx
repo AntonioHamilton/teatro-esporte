@@ -92,6 +92,39 @@ export default function Index() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const items = Array.from(document.querySelectorAll<HTMLElement>("[data-parallax]"));
+    let tops: number[] = [];
+
+    const update = () => {
+      const mid = window.innerHeight / 2;
+      items.forEach((el, i) => {
+        const speed = Number(el.dataset.parallax);
+        const max = Number(el.dataset.parallaxMax ?? 120);
+        const offset = (tops[i] - window.scrollY - mid) * speed;
+        const clamped = Math.max(-max, Math.min(max, -offset));
+        el.style.translate = `0 ${clamped}px`;
+      });
+    };
+
+    const measure = () => {
+      items.forEach((el) => (el.style.translate = "0 0"));
+      tops = items.map((el) => {
+        const r = el.getBoundingClientRect();
+        return r.top + window.scrollY + r.height / 2;
+      });
+      update();
+    };
+
+    measure();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", measure);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", measure);
+    };
+  }, []);
+
   return (
     <div className="page">
       <Seo
@@ -149,7 +182,7 @@ export default function Index() {
             </a>
           </div>
         </div>
-        <figure className="hero-figure">
+        <figure className="hero-figure" data-parallax="0.12">
           <span className="dot dot-1" />
           <span className="dot dot-2" />
           <div className="hero-media">
@@ -163,8 +196,8 @@ export default function Index() {
           Melhore sua comunicação e aumente seu potencial criativo.
         </p>
         <div className="abs beam" />
-        <img className="abs silhouette sil-dive" src="/images/pulo.jpg" alt="" />
-        <img className="abs silhouette sil-land" src="/images/pulo.jpg" alt="" />
+        <img className="abs silhouette sil-dive" src="/images/pulo.jpg" alt="" data-parallax="0.25" />
+        <img className="abs silhouette sil-land" src="/images/pulo.jpg" alt="" data-parallax="0.15" />
         <span className="abs hole hole-land" />
         <p className="abs text-46" style={{ top: 602, left: "calc(var(--ox) + 609px)", width: 511 }}>
           Nossa escola oferece aulas para todos os níveis, do <u>iniciante</u> ao <u>avançado</u>.
@@ -214,7 +247,7 @@ export default function Index() {
       </section>
 
       <section className="cta-image">
-        <img className="cta-photo" src={`${IMG}/espetaculo1.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
+        <img className="cta-photo" data-parallax="0.08" data-parallax-max="80" src={`${IMG}/espetaculo1.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
         <p className="abs text-46 white" style={{ top: 462, left: "calc(var(--ox) + 324px)", width: 633 }}>
           Comédia criada ao vivo a partir das sugestões da plateia.
         </p>
@@ -223,8 +256,8 @@ export default function Index() {
       <section className="cta" id="cursos">
         <div className="rings rings-cta" />
         <span className="abs hole hole-cta" />
-        <img className="abs silhouette sil-fall" src="/images/pulo.jpg" alt="" />
-        <img className="abs silhouette sil-jump" src="/images/pulo.jpg" alt="" />
+        <img className="abs silhouette sil-fall" src="/images/pulo.jpg" alt="" data-parallax="0.2" />
+        <img className="abs silhouette sil-jump" src="/images/pulo.jpg" alt="" data-parallax="0.3" />
         <h2 className="abs cta-title">
           Não é sobre ser engraçado.
           <br />
@@ -242,7 +275,7 @@ export default function Index() {
       </section>
 
       <section className="founder" id="sobre">
-        <div className="abs founder-photo">
+        <div className="abs founder-photo" data-parallax="0.12">
           <img src={`${IMG}/rodolfo-lisboa.png`} alt="Rodolfo Lisboa" />
         </div>
         <p className="abs founder-name">Teatro Esporte</p>
