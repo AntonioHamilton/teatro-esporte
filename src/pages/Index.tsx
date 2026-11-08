@@ -292,6 +292,23 @@ export default function Index() {
         </nav>
         <div className="abs footer-logo">
           <Brand />
+          <a
+            className="donate"
+            href="https://donate.stripe.com/28E9AS93ydLZ6l7bKJfbq00"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Doar para o Teatro Esporte"
+          >
+            <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 21s-7.5-4.6-9.5-9.1C1.1 8.6 3.2 5 6.8 5c2 0 3.6 1.1 4.6 2.6C12.4 6.1 14 5 16 5c3.6 0 5.7 3.6 4.3 6.9C19.5 16.4 12 21 12 21z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
         </div>
       </footer>
     </div>
