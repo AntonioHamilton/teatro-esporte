@@ -933,11 +933,11 @@ em {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 48px 20px 0;
+    padding: 32px 20px 0;
   }
 
   .eyebrow {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-size: 12px;
     letter-spacing: 0.16em;
   }
@@ -945,7 +945,7 @@ em {
   .hero h1 {
     font-size: 46px;
     line-height: 1.08;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .hero-actions {
@@ -958,7 +958,7 @@ em {
     width: 100%;
     max-width: 340px;
     height: 400px;
-    margin: 0 auto 48px;
+    margin: 0 auto 24px;
   }
 
   .hero-media {
@@ -972,8 +972,8 @@ em {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    padding: 64px 20px;
+    gap: 20px;
+    padding: 40px 20px;
   }
 
   .text-46,
@@ -997,13 +997,13 @@ em {
     clip-path: none;
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    padding: 80px 20px;
+    gap: 20px;
+    padding: 48px 20px;
   }
 
   .courses {
     height: auto;
-    padding: 72px 20px 80px;
+    padding: 48px 20px 56px;
   }
 
   .courses-title,
@@ -1016,7 +1016,7 @@ em {
   }
 
   .courses-title {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .shows {
@@ -1027,11 +1027,11 @@ em {
 
   .cta-image {
     height: auto;
-    min-height: 480px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 160px 20px 96px;
+    padding: 112px 20px 64px;
   }
 
   .cta-image::before {
@@ -1056,8 +1056,8 @@ em {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    padding: 96px 20px;
+    gap: 24px;
+    padding: 56px 20px;
     text-align: center;
   }
 
@@ -1070,8 +1070,8 @@ em {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 72px 20px;
+    gap: 14px;
+    padding: 48px 20px;
     overflow: hidden;
   }
 
@@ -1096,11 +1096,11 @@ em {
 
   .faq {
     height: auto;
-    padding: 72px 20px;
+    padding: 48px 20px;
   }
 
   .faq-title {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
@@ -1112,8 +1112,8 @@ em {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 64px 20px;
+    gap: 16px;
+    padding: 40px 20px;
   }
 
   .footer-line {
