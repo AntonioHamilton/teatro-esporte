@@ -83,6 +83,7 @@ const Brand = () => (
 
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 1);
@@ -103,7 +104,17 @@ export default function Index() {
         <a className="logo" href="#top" aria-label="Teatro Esporte">
           <Brand />
         </a>
-        <nav className="nav-links">
+        <button
+          className={menuOpen ? "menu-toggle open" : "menu-toggle"}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Abrir menu"
+          aria-expanded={menuOpen}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <nav className={menuOpen ? "nav-links open" : "nav-links"} onClick={() => setMenuOpen(false)}>
           <a href="#espetaculos">Espetáculos</a>
           <a href="#cursos">Cursos</a>
           <a href="#sobre">Sobre</a>
@@ -275,15 +286,9 @@ export default function Index() {
           </a>
         </div>
         <nav className="abs footer-links">
-          <a style={{ left: "calc(var(--ox) + 160px)" }} href="#espetaculos">
-            Espetáculos
-          </a>
-          <a style={{ left: "calc(var(--ox) + 597px)" }} href="#cursos">
-            Cursos
-          </a>
-          <a style={{ left: "calc(var(--ox) + 938px)" }} href="#sobre">
-            Sobre
-          </a>
+          <a href="#espetaculos">Espetáculos</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#sobre">Sobre</a>
         </nav>
         <div className="abs footer-logo">
           <Brand />
