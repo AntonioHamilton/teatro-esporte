@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Seo from "@/components/Seo";
-import "./landing.css";
 
 const IMG = "/images/teatro-esporte";
 

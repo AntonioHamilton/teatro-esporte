@@ -35,7 +35,6 @@ body {
   color: var(--ink);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
-  min-width: 1280px;
 }
 
 a {
@@ -822,4 +821,296 @@ em {
 .footer-logo {
   top: 452px;
   left: calc(var(--ox) + 920px);
+}
+
+/* Responsivo: abaixo de 1280px o layout medido vira fluxo normal */
+@media (max-width: 1279px) {
+  /* O JSX usa style inline com top/left/width; !important é o que vence isso */
+  .abs,
+  .shows,
+  .hero-figure,
+  .hero-media,
+  .footer-links a {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: auto !important;
+    transform: none !important;
+  }
+
+  .rings,
+  .dot,
+  .beam,
+  .silhouette,
+  .hole {
+    display: none;
+  }
+
+  .nav {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 20px;
+  }
+
+  .page {
+    padding-top: 136px;
+  }
+
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .nav-links a {
+    flex: none;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 19px;
+  }
+
+  .hero {
+    display: block;
+    height: auto;
+    padding: 48px 20px 0;
+  }
+
+  .eyebrow {
+    margin-bottom: 20px;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+    line-height: 1.08;
+    margin-bottom: 32px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .hero-figure {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    height: 400px;
+    margin: 56px auto 0;
+  }
+
+  .hero-media {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .statement {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 20px;
+  }
+
+  .text-46,
+  .statement .text-46 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .text-37 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .text-43 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .band {
+    height: auto;
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 20px;
+  }
+
+  .courses {
+    height: auto;
+    padding: 72px 20px 80px;
+  }
+
+  .courses-title,
+  .faq-title,
+  .footer-title,
+  .founder-name {
+    font-size: 40px;
+    line-height: 1.1;
+    white-space: normal;
+  }
+
+  .courses-title {
+    margin-bottom: 32px;
+  }
+
+  .shows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .cta-image {
+    height: auto;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 160px 20px 96px;
+  }
+
+  .cta-image::before {
+    height: 80px;
+    border-radius: 0 0 50% 50% / 0 0 40px 40px;
+  }
+
+  .cta-image p {
+    position: relative !important;
+    z-index: 1;
+    max-width: 600px;
+  }
+
+  .cta {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 96px 20px;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .founder {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 72px 20px;
+    overflow: hidden;
+  }
+
+  .founder-photo {
+    width: 100%;
+    max-width: 360px;
+    height: 420px;
+    margin: 0 auto;
+  }
+
+  .founder-role {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .founder-bio {
+    font-size: 19px;
+    line-height: 1.5;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .faq {
+    height: auto;
+    padding: 72px 20px;
+  }
+
+  .faq-title {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .faq-list {
+    gap: 10px;
+  }
+
+  .footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 64px 20px;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+  }
+
+  .footer-contact {
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .footer-contact a {
+    margin: 6px 0;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-links a {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .text-46,
+  .statement .text-46 {
+    font-size: 28px;
+  }
+
+  .shows {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-title,
+  .faq-title,
+  .footer-title,
+  .founder-name {
+    font-size: 34px;
+  }
+
+  .cta-title {
+    font-size: 30px;
+  }
 }
