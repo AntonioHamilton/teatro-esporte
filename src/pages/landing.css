@@ -828,19 +828,6 @@ em {
   top: 452px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.donate {
-  display: inline-flex;
-  color: #e0202a;
-  transition: transform 0.2s ease;
-}
-
-.donate:hover {
-  transform: scale(1.15);
 }
 
 .menu-toggle {
