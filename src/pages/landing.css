@@ -584,12 +584,12 @@ em {
   height: 42px;
 }
 
-.sil-fall {
-  top: 150px;
-  left: calc(var(--ox) + 240px);
-  width: 119px;
-  height: 178px;
-  opacity: 0.45;
+.sil-mirror {
+  top: 128px;
+  left: calc(var(--ox) + 380px);
+  width: 153px;
+  height: 229px;
+  transform: scaleX(-1);
 }
 
 .sil-jump {
