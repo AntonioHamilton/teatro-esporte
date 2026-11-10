@@ -1037,7 +1037,8 @@ em {
   }
 
   .cta-image::before {
-    height: 80px;
+    top: -2px;
+    height: 82px;
     border-radius: 0 0 50% 50% / 0 0 40px 40px;
   }
 
