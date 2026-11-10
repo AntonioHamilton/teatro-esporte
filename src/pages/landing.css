@@ -589,7 +589,7 @@ em {
   left: calc(var(--ox) + 380px);
   width: 153px;
   height: 229px;
-  transform: scaleX(-1);
+  transform: scaleX(-1) rotate(180deg);
 }
 
 .sil-jump {
@@ -597,6 +597,7 @@ em {
   left: calc(var(--ox) + 573px);
   width: 153px;
   height: 229px;
+  transform: rotate(180deg);
 }
 
 .cta-title {
