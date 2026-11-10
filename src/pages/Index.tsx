@@ -256,7 +256,6 @@ export default function Index() {
       <section className="cta" id="cursos">
         <div className="rings rings-cta" />
         <span className="abs hole hole-cta" />
-        <img className="abs silhouette sil-mirror" src="/images/atriz_improviso_vestido.png" alt="" data-parallax="0.3" data-parallax-max="40" />
         <img className="abs silhouette sil-jump" src="/images/atriz_improviso_vestido.png" alt="" data-parallax="0.3" data-parallax-max="40" />
         <h2 className="abs cta-title">
           Não é sobre ser engraçado.
