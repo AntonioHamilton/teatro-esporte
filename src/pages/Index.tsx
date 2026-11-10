@@ -133,7 +133,7 @@ export default function Index() {
         url="https://www.teatro-esporte.com/"
         keywords="teatro esporte, escola de teatro em aracaju, curso de teatro em aracaju, improvisação, comédia"
       />
-      <header className={scrolled ? "nav nav-scrolled" : "nav"}>
+      <header className={`nav${scrolled ? " nav-scrolled" : ""}${menuOpen ? " nav-open" : ""}`}>
         <a className="logo" href="#top" aria-label="Teatro Esporte">
           <Brand />
         </a>

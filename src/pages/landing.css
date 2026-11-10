@@ -893,6 +893,10 @@ em {
     display: flex;
   }
 
+  .nav-open {
+    background: var(--cream);
+  }
+
   .nav-links {
     display: none;
     width: 100%;
