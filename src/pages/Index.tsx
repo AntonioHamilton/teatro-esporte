@@ -13,7 +13,7 @@ const shows = [
     date: "14",
     month: "MAR",
     time: "14h - 14/03/2026",
-    image: `${IMG}/academia-despertar-criativo.webp`,
+    image: `${IMG}/foto-despertar-criativo.webp`,
     description: "Workshop de teatro para iniciantes. Vagas limitadas!",
   },
   {
@@ -22,7 +22,7 @@ const shows = [
     date: "07",
     month: "MAR",
     time: "19h30 - 07/03/2026",
-    image: `${IMG}/espetaculo1.webp`,
+    image: `${IMG}/foto-plateia-espetaculo.webp`,
     description: "Batalha de improvisadores. Duas equipes, uma plateia e zero roteiro.",
   },
   {
@@ -31,7 +31,7 @@ const shows = [
     date: "06",
     month: "DEZ",
     time: "20h - 06/12/2025",
-    image: `${IMG}/palhaco-biruta.webp`,
+    image: `${IMG}/foto-noite-do-improviso.webp`,
     description: "Comédia criada ao vivo a partir das sugestões da plateia.",
   },
 ];
@@ -74,7 +74,7 @@ const Arrow = () => (
 
 const Brand = () => (
   <span className="brand">
-    <img src={`${IMG}/icone.png`} alt="" />
+    <img src={`${IMG}/logo-icone.png`} alt="" />
     <span className="brand-name">
       TEATRO<span>ESPORTE</span>
     </span>
@@ -195,7 +195,7 @@ export default function Index() {
           <span className="dot dot-1" />
           <span className="dot dot-2" />
           <div className="hero-media">
-            <img src={`${IMG}/impro-masters.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
+            <img src={`${IMG}/foto-hero-improviso.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
           </div>
         </figure>
       </section>
@@ -205,8 +205,8 @@ export default function Index() {
           Melhore sua comunicação e aumente seu potencial criativo.
         </p>
         <div className="abs beam" />
-        <img className="abs silhouette sil-dive" src="/images/ator_reverencia_mascara.png" alt="" data-parallax="0.25" data-parallax-max="40" />
-        <img className="abs silhouette sil-land" src="/images/ator_terno_braco_levantado_sem_mascara.png" alt="" data-parallax="0.15" data-parallax-max="40" />
+        <img className="abs silhouette sil-dive" src="/images/silhueta-ator-reverencia-mascara.png" alt="" data-parallax="0.25" data-parallax-max="40" />
+        <img className="abs silhouette sil-land" src="/images/silhueta-atriz-braco-levantado.png" alt="" data-parallax="0.15" data-parallax-max="40" />
         <span className="abs hole hole-land" />
         <p className="abs text-46" style={{ top: 602, left: "calc(var(--ox) + 609px)", width: 511 }}>
           Nossa escola oferece aulas para todos os níveis, do <u>iniciante</u> ao <u>avançado</u>.
@@ -238,7 +238,7 @@ export default function Index() {
               rel="noopener noreferrer"
             >
               <div className="show-img">
-                <img src={show.image} alt={show.title} />
+                <img src={show.image} alt={`Foto do espetáculo ${show.title}`} />
                 <div className="show-date">
                   <span>{show.day}</span>
                   <strong>{show.date}</strong>
@@ -256,7 +256,7 @@ export default function Index() {
       </section>
 
       <section className="cta-image">
-        <img className="cta-photo" src={`${IMG}/espetaculo1.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
+        <img className="cta-photo" src={`${IMG}/foto-plateia-espetaculo.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
         <p className="abs text-46 white" style={{ top: 462, left: "calc(var(--ox) + 324px)", width: 633 }}>
           Comédia criada ao vivo a partir das sugestões da plateia.
         </p>
@@ -265,7 +265,7 @@ export default function Index() {
       <section className="cta" id="cursos">
         <div className="rings rings-cta" />
         <span className="abs hole hole-cta" />
-        <img className="abs silhouette sil-jump" src="/images/atriz_improviso_vestido.png" alt="" data-parallax="0.3" data-parallax-max="40" />
+        <img className="abs silhouette sil-jump" src="/images/silhueta-atriz-improviso.png" alt="" data-parallax="0.3" data-parallax-max="40" />
         <h2 className="abs cta-title">
           Não é sobre ser engraçado.
           <br />
@@ -284,7 +284,7 @@ export default function Index() {
 
       <section className="founder" id="sobre">
         <div className="abs founder-photo">
-          <img src={`${IMG}/rodolfo-lisboa.png`} alt="Rodolfo Lisboa" />
+          <img src={`${IMG}/foto-rodolfo-lisboa.png`} alt="Rodolfo Lisboa" />
         </div>
         <p className="abs founder-name">Teatro Esporte</p>
         <p className="abs founder-role">Aracaju, SE</p>
