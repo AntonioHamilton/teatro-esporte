@@ -353,12 +353,11 @@ em {
   border-radius: 50%;
 }
 
-/* Silhuetas: foto em contraste alto, multiplicada sobre o fundo claro.
-   O clip-path deixa só a pessoa (corta bola, sol e areia). */
+/* Silhuetas PNG com fundo transparente, multiplicadas sobre o fundo claro. */
 .silhouette {
+  object-fit: contain;
   filter: grayscale(1) brightness(1.8) contrast(20);
   mix-blend-mode: multiply;
-  clip-path: inset(28% 27% 20% 14%);
 }
 
 .hole {
