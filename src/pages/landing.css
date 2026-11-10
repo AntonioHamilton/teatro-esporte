@@ -897,6 +897,10 @@ em {
     background: var(--white);
   }
 
+  .nav-links .nav-cta {
+    box-shadow: none;
+  }
+
   .nav-links {
     display: none;
     width: 100%;
