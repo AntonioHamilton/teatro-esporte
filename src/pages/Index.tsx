@@ -256,7 +256,7 @@ export default function Index() {
       </section>
 
       <section className="cta-image">
-        <img className="cta-photo" data-parallax="0.08" data-parallax-max="80" src={`${IMG}/espetaculo1.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
+        <img className="cta-photo" src={`${IMG}/espetaculo1.webp`} alt="Espetáculo de improviso do Teatro Esporte" />
         <p className="abs text-46 white" style={{ top: 462, left: "calc(var(--ox) + 324px)", width: 633 }}>
           Comédia criada ao vivo a partir das sugestões da plateia.
         </p>
