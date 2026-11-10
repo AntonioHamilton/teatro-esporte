@@ -379,7 +379,6 @@ em {
   left: calc(var(--ox) + 801px);
   width: 325px;
   height: 488px;
-  transform: rotate(-90deg);
 }
 
 .sil-land {
