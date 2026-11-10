@@ -196,8 +196,8 @@ export default function Index() {
           Melhore sua comunicação e aumente seu potencial criativo.
         </p>
         <div className="abs beam" />
-        <img className="abs silhouette sil-dive" src="/images/ator_reverencia_mascara.png" alt="" data-parallax="0.25" />
-        <img className="abs silhouette sil-land" src="/images/ator_terno_braco_levantado_sem_mascara.png" alt="" data-parallax="0.15" />
+        <img className="abs silhouette sil-dive" src="/images/ator_reverencia_mascara.png" alt="" data-parallax="0.25" data-parallax-max="40" />
+        <img className="abs silhouette sil-land" src="/images/ator_terno_braco_levantado_sem_mascara.png" alt="" data-parallax="0.15" data-parallax-max="40" />
         <span className="abs hole hole-land" />
         <p className="abs text-46" style={{ top: 602, left: "calc(var(--ox) + 609px)", width: 511 }}>
           Nossa escola oferece aulas para todos os níveis, do <u>iniciante</u> ao <u>avançado</u>.
@@ -256,8 +256,8 @@ export default function Index() {
       <section className="cta" id="cursos">
         <div className="rings rings-cta" />
         <span className="abs hole hole-cta" />
-        <img className="abs silhouette sil-fall" src="/images/comediante_microfone.png" alt="" data-parallax="0.2" />
-        <img className="abs silhouette sil-jump" src="/images/atriz_improviso_vestido.png" alt="" data-parallax="0.3" />
+        <img className="abs silhouette sil-fall" src="/images/comediante_microfone.png" alt="" data-parallax="0.2" data-parallax-max="40" />
+        <img className="abs silhouette sil-jump" src="/images/atriz_improviso_vestido.png" alt="" data-parallax="0.3" data-parallax-max="40" />
         <h2 className="abs cta-title">
           Não é sobre ser engraçado.
           <br />

@@ -375,7 +375,7 @@ em {
 }
 
 .sil-dive {
-  top: -148px;
+  top: 60px;
   left: calc(var(--ox) + 801px);
   width: 325px;
   height: 488px;
@@ -383,7 +383,7 @@ em {
 }
 
 .sil-land {
-  top: 287px;
+  top: 260px;
   left: calc(var(--ox) + 99px);
   width: 364px;
   height: 546px;
@@ -585,16 +585,15 @@ em {
 }
 
 .sil-fall {
-  top: 88px;
-  left: calc(var(--ox) + 573px);
+  top: 150px;
+  left: calc(var(--ox) + 240px);
   width: 119px;
   height: 178px;
   opacity: 0.45;
-  transform: rotate(180deg);
 }
 
 .sil-jump {
-  top: 166px;
+  top: 128px;
   left: calc(var(--ox) + 573px);
   width: 153px;
   height: 229px;
