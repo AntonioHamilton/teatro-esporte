@@ -93,6 +93,15 @@ export default function Index() {
   }, []);
 
   useEffect(() => {
+    if (!menuOpen) return;
+    const onClick = (event: MouseEvent) => {
+      if (!(event.target as Element).closest(".nav")) setMenuOpen(false);
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, [menuOpen]);
+
+  useEffect(() => {
     const items = Array.from(document.querySelectorAll<HTMLElement>("[data-parallax]"));
     let tops: number[] = [];
 
