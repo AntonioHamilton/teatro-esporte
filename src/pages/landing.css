@@ -954,6 +954,10 @@ em {
     flex-wrap: wrap;
   }
 
+  .hero-actions .link {
+    background: var(--link-hover);
+  }
+
   .hero-figure {
     position: relative;
     order: -1;
