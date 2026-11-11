@@ -1,5 +1,6 @@
-import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import "./notFound.css";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,15 +10,19 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
-          Return to Home
-        </a>
-      </div>
-    </div>
+    <main className="not-found">
+      <img
+        className="not-found-img"
+        src="/images/teatro-esporte/palhaco-404.png"
+        alt="Palhaço de teatro com expressão de surpresa"
+      />
+      <p className="not-found-code">404</p>
+      <h1 className="not-found-title">Essa cena não existe.</h1>
+      <p className="not-found-text">Você entrou na coxia errada. Volte para o palco principal.</p>
+      <a className="btn" href="/">
+        Voltar para o início
+      </a>
+    </main>
   );
 };
 

@@ -139,7 +139,7 @@ export default function Index() {
       <Seo
         title="Teatro Esporte: A Escola de Teatro e Improviso em Aracaju"
         description="Melhore sua comunicação e aumente seu potencial criativo através de nossas aulas de teatro, improvisação e espetáculos de comédia."
-        url="https://www.teatro-esporte.com/"
+        url="https://teatroesporte.com/"
         keywords="teatro esporte, escola de teatro em aracaju, curso de teatro em aracaju, improvisação, comédia"
       />
       <header className={`nav${scrolled ? " nav-scrolled" : ""}${menuOpen ? " nav-open" : ""}`}>
