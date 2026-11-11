@@ -22,7 +22,7 @@
 
 .not-found-code {
   font-family: 'Lilita One', var(--sans), sans-serif;
-  font-size: clamp(96px, 20vh, 170px);
+  font-size: clamp(80px, 16vh, 136px);
   line-height: 1;
   color: var(--yellow);
   -webkit-text-stroke: clamp(4px, 0.8vh, 7px) var(--ink);
