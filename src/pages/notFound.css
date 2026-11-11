@@ -12,8 +12,10 @@
 }
 
 .not-found-img {
-  width: min(320px, 70vw);
-  height: auto;
+  width: auto;
+  height: clamp(160px, 36vh, 340px);
+  max-width: 80vw;
+  object-fit: contain;
 }
 
 .not-found-code {
