@@ -317,7 +317,7 @@ export default function Index() {
         <div className="abs footer-contact">
           <a href="https://www.instagram.com/teatroesporte/" target="_blank" rel="noopener noreferrer">
             @teatroesporte
-          </a>
+          </a>{" "}
           <a
             href={whatsapp("Olá, quero aprender improviso!")}
             target="_blank"
@@ -327,8 +327,8 @@ export default function Index() {
           </a>
         </div>
         <nav className="abs footer-links">
-          <a href="#espetaculos">Espetáculos</a>
-          <a href="#cursos">Cursos</a>
+          <a href="#espetaculos">Espetáculos</a>{" "}
+          <a href="#cursos">Cursos</a>{" "}
           <a href="#sobre">Sobre</a>
         </nav>
         <a
